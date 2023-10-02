@@ -63,6 +63,26 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap curtain_off {
+            get {
+                object obj = ResourceManager.GetObject("curtain_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap curtain_on {
+            get {
+                object obj = ResourceManager.GetObject("curtain_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_off {
             get {
                 object obj = ResourceManager.GetObject("icon_off", resourceCulture);
@@ -86,6 +106,76 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap room1 {
             get {
                 object obj = ResourceManager.GetObject("room1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_lights_off {
+            get {
+                object obj = ResourceManager.GetObject("room1_lights_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_off_tv_and_on_curtain {
+            get {
+                object obj = ResourceManager.GetObject("room1_off_tv_and_on_curtain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_on_curtain_off_tv {
+            get {
+                object obj = ResourceManager.GetObject("room1_on_curtain_off_tv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_on_curtain_on_tv {
+            get {
+                object obj = ResourceManager.GetObject("room1_on_curtain_on_tv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_on_tv {
+            get {
+                object obj = ResourceManager.GetObject("room1_on_tv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_on_tv_and_on_curtain {
+            get {
+                object obj = ResourceManager.GetObject("room1_on_tv_and_on_curtain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap room1_on_tv_off_lights {
+            get {
+                object obj = ResourceManager.GetObject("room1_on_tv_off_lights", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

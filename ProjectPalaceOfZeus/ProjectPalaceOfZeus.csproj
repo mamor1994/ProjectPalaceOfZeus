@@ -46,27 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Room.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +94,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icon_tv\tv_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_lights_off.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_lights_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_on_lights\room1_on_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_on_lights\room1_off_tv_and_on_curtain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_on_lights\room1_on_tv_and_on_curtain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_off_lights_off_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_on_lights_on_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_on_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curtain\curtain_on.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curtain\curtain_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_on_tv_off_lights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_on_curtain_off_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\room_off_lights\room1_on_curtain_on_tv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
