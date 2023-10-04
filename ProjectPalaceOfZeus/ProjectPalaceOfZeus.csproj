@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Syncfusion.Licensing, Version=23.1460.39.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.23.1.39\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +63,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pool.Designer.cs">
+      <DependentUpon>Pool.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +77,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pool.resx">
+      <DependentUpon>Pool.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -133,6 +147,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\room_off_lights\room1_on_curtain_on_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\episkepths.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\αρχείο λήψης.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\places\RoomPool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\places\PalacePool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\343757733_694205245838160_4286977817673191270_n copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\places\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\places\withWater.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
