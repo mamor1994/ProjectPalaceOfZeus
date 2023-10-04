@@ -83,6 +83,26 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empty {
+            get {
+                object obj = ResourceManager.GetObject("empty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap episkepths {
+            get {
+                object obj = ResourceManager.GetObject("episkepths", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_off {
             get {
                 object obj = ResourceManager.GetObject("icon_off", resourceCulture);
@@ -183,6 +203,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RoomPool {
+            get {
+                object obj = ResourceManager.GetObject("RoomPool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tv_off {
             get {
                 object obj = ResourceManager.GetObject("tv_off", resourceCulture);
@@ -196,6 +226,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap tv_on {
             get {
                 object obj = ResourceManager.GetObject("tv_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap withWater {
+            get {
+                object obj = ResourceManager.GetObject("withWater", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

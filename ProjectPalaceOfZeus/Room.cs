@@ -13,6 +13,7 @@ namespace ProjectPalaceOfZeus
     public partial class Room : Form
     {
         int room_lights = 1, room_tv = 0, room_curtain = 0;
+        private bool needToExitApp = true;
 
         public Room()
         {
@@ -280,6 +281,14 @@ namespace ProjectPalaceOfZeus
                     room_tv = 1;
                     room_curtain = 0;
                 }
+            }
+        }
+
+        private void Room_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (needToExitApp)
+            {
+                Application.Exit();
             }
         }
 
