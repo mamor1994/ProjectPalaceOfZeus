@@ -121,67 +121,118 @@
   <data name="Restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\places\Restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tv_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icon_tv\tv_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marketarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marketarea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musecoffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musecoffee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campingarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campingarea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OlympusGarden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OlympusGarden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="episkepths" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\episkepths.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RoomPool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\RoomPool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="muse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\pc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="parkingarea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parkingarea1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="withWater" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\withWater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room1_on_curtain_on_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_off_lights\room1_on_curtain_on_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room1_lights_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_off_lights\room1_lights_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="curtain_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icon_curtain\curtain_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="empty1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="room1_on_tv_off_lights" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_off_lights\room1_on_tv_off_lights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="room1_off_tv_and_on_curtain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_on_lights\room1_off_tv_and_on_curtain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_on_lights\room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room1_on_curtain_off_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_off_lights\room1_on_curtain_off_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tv_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icon_tv\tv_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icon_lights\icon_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="curtain_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icon_curtain\curtain_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Restaurant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\places\Restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tv_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon_tv\tv_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="room1_on_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_on_lights\room1_on_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Palace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon_lights\icon_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curtain_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon_curtain\curtain_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1_on_curtain_off_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_off_lights\room1_on_curtain_off_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="room1_on_tv_and_on_curtain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_on_lights\room1_on_tv_and_on_curtain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1_off_tv_and_on_curtain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_on_lights\room1_off_tv_and_on_curtain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\pc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trojangps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trojangps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="valley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\valley.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_image-T4UyiwMIG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video_image-T4UyiwMIG.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parkinglogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parkinglogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_on_lights\room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campingsite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campingsite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1_lights_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_off_lights\room1_lights_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="withWater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\withWater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="entrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\entrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parking-sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parking-sign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curtain_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon_curtain\curtain_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tv_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon_tv\tv_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomPool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\RoomPool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_lights\icon_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="empty1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cockpit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cockpit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1_on_curtain_on_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_off_lights\room1_on_curtain_on_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enginestart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enginestart.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

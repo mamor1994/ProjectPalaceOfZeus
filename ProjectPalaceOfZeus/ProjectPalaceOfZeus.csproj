@@ -75,6 +75,12 @@
     <Compile Include="Pool.Designer.cs">
       <DependentUpon>Pool.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrojanHorse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrojanHorse.Designer.cs">
+      <DependentUpon>TrojanHorse.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Restaurant.resx">
       <DependentUpon>Restaurant.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pool.resx">
       <DependentUpon>Pool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrojanHorse.resx">
+      <DependentUpon>TrojanHorse.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -186,6 +195,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\pc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cockpit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketarea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trojangps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valley.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_image-T4UyiwMIG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campingarea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musecoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campingsite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkingarea1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkinglogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OlympusGarden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enginestart.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
