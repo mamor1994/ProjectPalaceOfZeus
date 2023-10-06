@@ -16,7 +16,7 @@ namespace ProjectPalaceOfZeus
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pool());
+            Application.Run(new TrojanHorse());
         }
     }
 }
