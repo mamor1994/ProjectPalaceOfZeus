@@ -35,6 +35,7 @@
             this.lblTemperature = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTemperature)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,6 +101,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "";
             // 
             // pictureBox1
             // 
@@ -111,12 +113,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "";
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(254, 208);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(14, 16);
+            this.lblMessage.TabIndex = 10;
+            this.lblMessage.Text = "k";
             // 
             // Pool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1097, 586);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnTogglePool);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblTemperature);
@@ -144,5 +157,6 @@
         private System.Windows.Forms.Button btnToggleAlarm;
         private System.Windows.Forms.Label lblTemperature;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
