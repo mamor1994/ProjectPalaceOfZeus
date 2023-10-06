@@ -40,7 +40,7 @@ namespace ProjectPalaceOfZeus
             {
                 waterSupplyOn = false;
                 MessageBox.Show("Η παροχή Νερού είναι απενεργοποιημένη!", "Απενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pictureBox1.Image = Properties.Resources.empty;
+                pictureBox2.Image = Properties.Resources.empty;
             }
             else
             {
@@ -53,7 +53,7 @@ namespace ProjectPalaceOfZeus
 
         private void trackBarTemperature_Scroll(object sender, EventArgs e)
         {
-            lblTemperature.Text = "Θερμοκρασία: " + trackBarTemperature.Value.ToString() + "°C";
+            lblTemperature.Text = "Temperature: " + trackBarTemperature.Value.ToString() + "°C";
         }
 
         private void Pool_FormClosing(object sender, FormClosingEventArgs e)

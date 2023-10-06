@@ -93,6 +93,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empty1 {
+            get {
+                object obj = ResourceManager.GetObject("empty1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap episkepths {
             get {
                 object obj = ResourceManager.GetObject("episkepths", resourceCulture);
@@ -116,6 +126,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap icon_on {
             get {
                 object obj = ResourceManager.GetObject("icon_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pc {
+            get {
+                object obj = ResourceManager.GetObject("pc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
