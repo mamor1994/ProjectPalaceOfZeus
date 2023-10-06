@@ -32,6 +32,7 @@ namespace ProjectPalaceOfZeus
                 alarmActivated = true;
                 MessageBox.Show("Ο συναγερμός είναι ενεργοποιημένος!", "Ενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
         }
 
         private void btnToggleWaterSupply_Click(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace ProjectPalaceOfZeus
             {
                 waterSupplyOn = true;
                 MessageBox.Show("Η παροχή Νερού είναι ενεργοποιημένη!", "Ενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pictureBox1.Image = Properties.Resources.withWater;
+                pictureBox2.Image = Properties.Resources.withWater;
 
             }
         }
