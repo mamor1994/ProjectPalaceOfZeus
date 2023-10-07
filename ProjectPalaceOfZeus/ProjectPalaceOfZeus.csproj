@@ -361,5 +361,38 @@
   <ItemGroup>
     <None Include="Resources\marketarea.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\returnbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cockpitextra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opendoors!.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closedoors!.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raisestairs!.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lowerstairs!.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opendoors!!.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closedoors!!.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lowerstairs!!.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raisestairs!!.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausebutton!.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -93,9 +93,39 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap closedoors_ {
+            get {
+                object obj = ResourceManager.GetObject("closedoors!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closedoors__ {
+            get {
+                object obj = ResourceManager.GetObject("closedoors!!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cockpit {
             get {
                 object obj = ResourceManager.GetObject("cockpit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cockpitextra {
+            get {
+                object obj = ResourceManager.GetObject("cockpitextra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +313,26 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lowerstairs_ {
+            get {
+                object obj = ResourceManager.GetObject("lowerstairs!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lowerstairs__ {
+            get {
+                object obj = ResourceManager.GetObject("lowerstairs!!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap marketarea {
             get {
                 object obj = ResourceManager.GetObject("marketarea", resourceCulture);
@@ -346,6 +396,26 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap opendoors {
             get {
                 object obj = ResourceManager.GetObject("opendoors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opendoors_ {
+            get {
+                object obj = ResourceManager.GetObject("opendoors!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opendoors__ {
+            get {
+                object obj = ResourceManager.GetObject("opendoors!!", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +493,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pausebutton_ {
+            get {
+                object obj = ResourceManager.GetObject("pausebutton!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pc {
             get {
                 object obj = ResourceManager.GetObject("pc", resourceCulture);
@@ -443,6 +523,26 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap raisestairs_ {
+            get {
+                object obj = ResourceManager.GetObject("raisestairs!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap raisestairs__ {
+            get {
+                object obj = ResourceManager.GetObject("raisestairs!!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Restaurant {
             get {
                 object obj = ResourceManager.GetObject("Restaurant", resourceCulture);
@@ -456,6 +556,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap Restaurant1 {
             get {
                 object obj = ResourceManager.GetObject("Restaurant1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap returnbutton {
+            get {
+                object obj = ResourceManager.GetObject("returnbutton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.DoorTimer = new System.Windows.Forms.Timer(this.components);
+            this.StairsTimer = new System.Windows.Forms.Timer(this.components);
+            this.TravelTimer = new System.Windows.Forms.Timer(this.components);
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.ExitLabel = new System.Windows.Forms.Label();
+            this.ReturnPictureBox = new System.Windows.Forms.PictureBox();
             this.DoorControlPanel = new System.Windows.Forms.Panel();
             this.StairsUpPictureBox = new System.Windows.Forms.PictureBox();
             this.StairsDownPictureBox = new System.Windows.Forms.PictureBox();
@@ -72,9 +77,8 @@
             this.zeusPalacePictureBox = new System.Windows.Forms.PictureBox();
             this.marketAreaPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.DoorTimer = new System.Windows.Forms.Timer(this.components);
-            this.StairsTimer = new System.Windows.Forms.Timer(this.components);
             this.ControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReturnPictureBox)).BeginInit();
             this.DoorControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StairsDownPictureBox)).BeginInit();
@@ -102,10 +106,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.marketAreaPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
+            // DoorTimer
+            // 
+            this.DoorTimer.Interval = 4000;
+            this.DoorTimer.Tick += new System.EventHandler(this.DoorTimer_Tick);
+            // 
+            // StairsTimer
+            // 
+            this.StairsTimer.Interval = 4000;
+            this.StairsTimer.Tick += new System.EventHandler(this.StairsTimer_Tick);
+            // 
+            // TravelTimer
+            // 
+            this.TravelTimer.Interval = 6000;
+            this.TravelTimer.Tick += new System.EventHandler(this.TravelTimer_Tick);
+            // 
             // ControlPanel
             // 
             this.ControlPanel.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.cockpit;
             this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControlPanel.Controls.Add(this.ExitLabel);
+            this.ControlPanel.Controls.Add(this.ReturnPictureBox);
             this.ControlPanel.Controls.Add(this.DoorControlPanel);
             this.ControlPanel.Controls.Add(this.OkPictureBox);
             this.ControlPanel.Controls.Add(this.UpPictureBox);
@@ -121,8 +142,33 @@
             this.ControlPanel.Size = new System.Drawing.Size(900, 596);
             this.ControlPanel.TabIndex = 0;
             // 
+            // ExitLabel
+            // 
+            this.ExitLabel.AutoSize = true;
+            this.ExitLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.ExitLabel.Location = new System.Drawing.Point(3, 507);
+            this.ExitLabel.Name = "ExitLabel";
+            this.ExitLabel.Size = new System.Drawing.Size(59, 20);
+            this.ExitLabel.TabIndex = 9;
+            this.ExitLabel.Text = "Έξοδος";
+            // 
+            // ReturnPictureBox
+            // 
+            this.ReturnPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReturnPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.returnbutton;
+            this.ReturnPictureBox.Location = new System.Drawing.Point(4, 530);
+            this.ReturnPictureBox.Name = "ReturnPictureBox";
+            this.ReturnPictureBox.Size = new System.Drawing.Size(81, 63);
+            this.ReturnPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ReturnPictureBox.TabIndex = 8;
+            this.ReturnPictureBox.TabStop = false;
+            this.ReturnPictureBox.Click += new System.EventHandler(this.ReturnPictureBox_Click);
+            // 
             // DoorControlPanel
             // 
+            this.DoorControlPanel.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.cockpitextra;
+            this.DoorControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.DoorControlPanel.Controls.Add(this.StairsUpPictureBox);
             this.DoorControlPanel.Controls.Add(this.StairsDownPictureBox);
             this.DoorControlPanel.Controls.Add(this.PausePictureBox);
@@ -155,8 +201,8 @@
             // 
             this.StairsDownPictureBox.BackColor = System.Drawing.SystemColors.Control;
             this.StairsDownPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StairsDownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.lowerstairs;
-            this.StairsDownPictureBox.Location = new System.Drawing.Point(37, 132);
+            this.StairsDownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.lowerstairs__;
+            this.StairsDownPictureBox.Location = new System.Drawing.Point(48, 134);
             this.StairsDownPictureBox.Name = "StairsDownPictureBox";
             this.StairsDownPictureBox.Size = new System.Drawing.Size(67, 65);
             this.StairsDownPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,9 +214,9 @@
             // 
             this.PausePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PausePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.pausebutton;
-            this.PausePictureBox.Location = new System.Drawing.Point(148, 53);
+            this.PausePictureBox.Location = new System.Drawing.Point(156, 40);
             this.PausePictureBox.Name = "PausePictureBox";
-            this.PausePictureBox.Size = new System.Drawing.Size(55, 52);
+            this.PausePictureBox.Size = new System.Drawing.Size(64, 60);
             this.PausePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PausePictureBox.TabIndex = 7;
             this.PausePictureBox.TabStop = false;
@@ -191,8 +237,8 @@
             // OpenDoorsPictureBox
             // 
             this.OpenDoorsPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.OpenDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.opendoors;
-            this.OpenDoorsPictureBox.Location = new System.Drawing.Point(37, 35);
+            this.OpenDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.opendoors__;
+            this.OpenDoorsPictureBox.Location = new System.Drawing.Point(48, 35);
             this.OpenDoorsPictureBox.Name = "OpenDoorsPictureBox";
             this.OpenDoorsPictureBox.Size = new System.Drawing.Size(67, 65);
             this.OpenDoorsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +249,9 @@
             // UpStairsLabel
             // 
             this.UpStairsLabel.AutoSize = true;
+            this.UpStairsLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpStairsLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.UpStairsLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.UpStairsLabel.Location = new System.Drawing.Point(220, 103);
             this.UpStairsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UpStairsLabel.Name = "UpStairsLabel";
@@ -216,7 +264,9 @@
             // DownStairsLabel
             // 
             this.DownStairsLabel.AutoSize = true;
+            this.DownStairsLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DownStairsLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.DownStairsLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.DownStairsLabel.Location = new System.Drawing.Point(7, 103);
             this.DownStairsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DownStairsLabel.Name = "DownStairsLabel";
@@ -229,8 +279,10 @@
             // PauseLabel
             // 
             this.PauseLabel.AutoSize = true;
+            this.PauseLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PauseLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.PauseLabel.Location = new System.Drawing.Point(148, 22);
+            this.PauseLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.PauseLabel.Location = new System.Drawing.Point(156, 4);
             this.PauseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PauseLabel.Name = "PauseLabel";
             this.PauseLabel.Size = new System.Drawing.Size(59, 28);
@@ -242,7 +294,9 @@
             // CloseDoorLabel
             // 
             this.CloseDoorLabel.AutoSize = true;
+            this.CloseDoorLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CloseDoorLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseDoorLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.CloseDoorLabel.Location = new System.Drawing.Point(229, 4);
             this.CloseDoorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CloseDoorLabel.Name = "CloseDoorLabel";
@@ -255,8 +309,10 @@
             // OpenDoorLabel
             // 
             this.OpenDoorLabel.AutoSize = true;
+            this.OpenDoorLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.OpenDoorLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenDoorLabel.Location = new System.Drawing.Point(16, 4);
+            this.OpenDoorLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.OpenDoorLabel.Location = new System.Drawing.Point(7, 2);
             this.OpenDoorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.OpenDoorLabel.Name = "OpenDoorLabel";
             this.OpenDoorLabel.Size = new System.Drawing.Size(137, 28);
@@ -724,16 +780,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseCompatibleTextRendering = true;
             // 
-            // DoorTimer
-            // 
-            this.DoorTimer.Interval = 7000;
-            this.DoorTimer.Tick += new System.EventHandler(this.DoorTimer_Tick);
-            // 
-            // StairsTimer
-            // 
-            this.StairsTimer.Interval = 7000;
-            this.StairsTimer.Tick += new System.EventHandler(this.StairsTimer_Tick);
-            // 
             // TrojanHorse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -748,6 +794,8 @@
             this.Text = "TrojanHorse";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TrojanHorse_KeyDown);
             this.ControlPanel.ResumeLayout(false);
+            this.ControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ReturnPictureBox)).EndInit();
             this.DoorControlPanel.ResumeLayout(false);
             this.DoorControlPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).EndInit();
@@ -826,5 +874,8 @@
         private System.Windows.Forms.PictureBox StairsDownPictureBox;
         private System.Windows.Forms.Timer DoorTimer;
         private System.Windows.Forms.Timer StairsTimer;
+        private System.Windows.Forms.Timer TravelTimer;
+        private System.Windows.Forms.PictureBox ReturnPictureBox;
+        private System.Windows.Forms.Label ExitLabel;
     }
 }
