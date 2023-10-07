@@ -39,24 +39,50 @@ namespace ProjectPalaceOfZeus
                 case Keys.Up:
                     if (currentRow > 0)
                         currentRow -= 2;
+                    UpPictureBox.BackColor = Color.Green;
+                    DownPictureBox.BackColor = Color.Black;
+                    LeftPictureBox.BackColor = Color.Black;
+                    RightPictureBox.BackColor = Color.Black;
+                    OkPictureBox.BackColor = Color.Black;
                     break;
                 case Keys.Down:
                     if (currentRow < 4)
                         currentRow += 2;
+                    UpPictureBox.BackColor = Color.Black;
+                    DownPictureBox.BackColor = Color.Green;
+                    LeftPictureBox.BackColor = Color.Black;
+                    RightPictureBox.BackColor = Color.Black;
+                    OkPictureBox.BackColor = Color.Black;
                     break;
                 case Keys.Left:
                     if (currentCol > 0)
                         currentCol--;
+                    UpPictureBox.BackColor = Color.Black;
+                    DownPictureBox.BackColor = Color.Black;
+                    LeftPictureBox.BackColor = Color.Green;
+                    RightPictureBox.BackColor = Color.Black;
+                    OkPictureBox.BackColor = Color.Black;
                     break;
                 case Keys.Right:
                     if (currentCol < 3)
                         currentCol++;
+                    UpPictureBox.BackColor = Color.Black;
+                    DownPictureBox.BackColor = Color.Black;
+                    LeftPictureBox.BackColor = Color.Black;
+                    RightPictureBox.BackColor = Color.Green;
+                    OkPictureBox.BackColor = Color.Black;
                     break;
                 case Keys.Enter:
+                    UpPictureBox.BackColor = Color.Black;
+                    DownPictureBox.BackColor = Color.Black;
+                    LeftPictureBox.BackColor = Color.Black;
+                    RightPictureBox.BackColor = Color.Black;
+                    OkPictureBox.BackColor = Color.Green;
                     DialogResult result = MessageBox.Show("Θέλετε να μετακινηθείτε σε αυτήν την τοποθεσία;", "Επιβεβαίωση", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        SetDestination(currentCol, currentRow);
+                        MessageBox.Show("Έναρξη αυτόματης πλοήγησης", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TravelTimer.Start();                        
                     }
                     break;
             }
@@ -225,12 +251,17 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("Οι πόρτες έκλεισαν","Ενημέρωση",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 openDoors = false;
+                OpenDoorsPictureBox.Image = Properties.Resources.opendoors;
+                CloseDoorsPictureBox.Image = Properties.Resources.closedoors__;
+                PausePictureBox.Image = Properties.Resources.pausebutton;
             }
             else
             {
                 MessageBox.Show("Οι πόρτες άνοιξαν", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 openDoors = true;
-                 
+                OpenDoorsPictureBox.Image = Properties.Resources.opendoors__;
+                CloseDoorsPictureBox.Image = Properties.Resources.closedoors;
+                PausePictureBox.Image = Properties.Resources.pausebutton;
             }
         }
 
@@ -241,19 +272,61 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("H σκάλα ανέβηκε", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loweredStairs = false;
+                StairsDownPictureBox.Image = Properties.Resources.lowerstairs;
+                StairsUpPictureBox.Image = Properties.Resources.raisestairs__;
+                PausePictureBox.Image = Properties.Resources.pausebutton;
             }
             else
             {
                 MessageBox.Show("Η σκάλα κατέβηκε", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loweredStairs = true;
+                StairsDownPictureBox.Image = Properties.Resources.lowerstairs__;
+                StairsUpPictureBox.Image = Properties.Resources.raisestairs;
+                PausePictureBox.Image = Properties.Resources.pausebutton;
             }
 
         }
 
         private void PausePictureBox_Click(object sender, EventArgs e)
         {
-            DoorTimer.Stop();
-            MessageBox.Show("Οι πόρτες είναι μισόκλειστες","Ενημέρωση",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (DoorTimer.Enabled)
+            {
+                DoorTimer.Stop();
+                MessageBox.Show("Οι πόρτες είναι μισόκλειστες", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PausePictureBox.Image = Properties.Resources.pausebutton_;
+                StairsDownPictureBox.Image = Properties.Resources.lowerstairs;
+                StairsUpPictureBox.Image = Properties.Resources.raisestairs;
+                OpenDoorsPictureBox.Image = Properties.Resources.opendoors;
+                CloseDoorsPictureBox.Image = Properties.Resources.closedoors;
+            }
+        }
+
+        private void TravelTimer_Tick(object sender, EventArgs e)
+        {
+            TravelTimer.Stop();
+            MessageBox.Show("Φτάσατε στον προορισμό σας", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            SetDestination(currentCol, currentRow);
+        }
+
+        private void ReturnPictureBox_Click(object sender, EventArgs e)
+        {
+            if (openDoors == false && loweredStairs == false)
+            {
+                MessageBox.Show("Πρέπει να ανοίξετε την πόρτα και να κατεβάσετε τη σκάλα για να βγείτε με ασφάλεια.", "Προσοχή!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (openDoors == true && loweredStairs == true)
+            {
+                Destination.Show();
+                this.Close();
+            }
+            else if (openDoors == true && loweredStairs != true)
+            {
+                MessageBox.Show("Κατεβάστε τη σκάλα για να κατεβείτε με ασφάλεια.", "Προσοχή!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (openDoors != true && loweredStairs == true)
+            {
+                MessageBox.Show("Η πόρτα είναι κλειστή, ανοίξτε τη για να βγείτε έξω.", "Προσοχή!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
