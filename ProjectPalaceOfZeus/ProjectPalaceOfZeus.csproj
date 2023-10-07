@@ -50,6 +50,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CampingArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CampingArea.Designer.cs">
+      <DependentUpon>CampingArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CentaurFieldArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentaurFieldArea.Designer.cs">
+      <DependentUpon>CentaurFieldArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoffeeArea.Designer.cs">
+      <DependentUpon>CoffeeArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForestArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForestArea.Designer.cs">
+      <DependentUpon>ForestArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketArea.Designer.cs">
+      <DependentUpon>MarketArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingArea1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParkingArea1.Designer.cs">
+      <DependentUpon>ParkingArea1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingArea2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParkingArea2.Designer.cs">
+      <DependentUpon>ParkingArea2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +123,27 @@
     <Compile Include="TrojanHorse.Designer.cs">
       <DependentUpon>TrojanHorse.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CampingArea.resx">
+      <DependentUpon>CampingArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CentaurFieldArea.resx">
+      <DependentUpon>CentaurFieldArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoffeeArea.resx">
+      <DependentUpon>CoffeeArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForestArea.resx">
+      <DependentUpon>ForestArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketArea.resx">
+      <DependentUpon>MarketArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingArea1.resx">
+      <DependentUpon>ParkingArea1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingArea2.resx">
+      <DependentUpon>ParkingArea2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Restaurant.resx">
       <DependentUpon>Restaurant.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +309,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\enginestart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirbuttonright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirbuttondown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirbuttonleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirbuttonup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opendoors.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closedoors.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausebutton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raisestairs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lowerstairs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trojanhorse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forestarea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkingarea2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkingarea11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffeearea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livadiarea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketarea.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

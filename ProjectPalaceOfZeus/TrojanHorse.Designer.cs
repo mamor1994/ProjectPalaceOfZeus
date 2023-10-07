@@ -29,6 +29,22 @@
         private void InitializeComponent()
         {
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.DoorControlPanel = new System.Windows.Forms.Panel();
+            this.StairsUpPictureBox = new System.Windows.Forms.PictureBox();
+            this.StairsDownPictureBox = new System.Windows.Forms.PictureBox();
+            this.PausePictureBox = new System.Windows.Forms.PictureBox();
+            this.CloseDoorsPictureBox = new System.Windows.Forms.PictureBox();
+            this.OpenDoorsPictureBox = new System.Windows.Forms.PictureBox();
+            this.UpStairsLabel = new System.Windows.Forms.Label();
+            this.DownStairsLabel = new System.Windows.Forms.Label();
+            this.PauseLabel = new System.Windows.Forms.Label();
+            this.CloseDoorLabel = new System.Windows.Forms.Label();
+            this.OpenDoorLabel = new System.Windows.Forms.Label();
+            this.OkPictureBox = new System.Windows.Forms.PictureBox();
+            this.UpPictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftPictureBox = new System.Windows.Forms.PictureBox();
+            this.RightPictureBox = new System.Windows.Forms.PictureBox();
+            this.DownPictureBox = new System.Windows.Forms.PictureBox();
             this.startEnginePictureBox = new System.Windows.Forms.PictureBox();
             this.HotelMap = new System.Windows.Forms.TableLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
@@ -56,6 +72,17 @@
             this.marketAreaPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ControlPanel.SuspendLayout();
+            this.DoorControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StairsDownPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PausePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseDoorsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OpenDoorsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OkPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DownPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.startEnginePictureBox)).BeginInit();
             this.HotelMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ArtemisCampPictureBox)).BeginInit();
@@ -76,22 +103,222 @@
             // 
             this.ControlPanel.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.cockpit;
             this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControlPanel.Controls.Add(this.DoorControlPanel);
+            this.ControlPanel.Controls.Add(this.OkPictureBox);
+            this.ControlPanel.Controls.Add(this.UpPictureBox);
+            this.ControlPanel.Controls.Add(this.LeftPictureBox);
+            this.ControlPanel.Controls.Add(this.RightPictureBox);
+            this.ControlPanel.Controls.Add(this.DownPictureBox);
             this.ControlPanel.Controls.Add(this.startEnginePictureBox);
             this.ControlPanel.Controls.Add(this.HotelMap);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ControlPanel.Location = new System.Drawing.Point(0, 0);
             this.ControlPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(1000, 562);
+            this.ControlPanel.Size = new System.Drawing.Size(900, 596);
             this.ControlPanel.TabIndex = 0;
+            // 
+            // DoorControlPanel
+            // 
+            this.DoorControlPanel.Controls.Add(this.StairsUpPictureBox);
+            this.DoorControlPanel.Controls.Add(this.StairsDownPictureBox);
+            this.DoorControlPanel.Controls.Add(this.PausePictureBox);
+            this.DoorControlPanel.Controls.Add(this.CloseDoorsPictureBox);
+            this.DoorControlPanel.Controls.Add(this.OpenDoorsPictureBox);
+            this.DoorControlPanel.Controls.Add(this.UpStairsLabel);
+            this.DoorControlPanel.Controls.Add(this.DownStairsLabel);
+            this.DoorControlPanel.Controls.Add(this.PauseLabel);
+            this.DoorControlPanel.Controls.Add(this.CloseDoorLabel);
+            this.DoorControlPanel.Controls.Add(this.OpenDoorLabel);
+            this.DoorControlPanel.Location = new System.Drawing.Point(545, 0);
+            this.DoorControlPanel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DoorControlPanel.Name = "DoorControlPanel";
+            this.DoorControlPanel.Size = new System.Drawing.Size(355, 197);
+            this.DoorControlPanel.TabIndex = 7;
+            // 
+            // StairsUpPictureBox
+            // 
+            this.StairsUpPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.raisestairs;
+            this.StairsUpPictureBox.Location = new System.Drawing.Point(256, 132);
+            this.StairsUpPictureBox.Name = "StairsUpPictureBox";
+            this.StairsUpPictureBox.Size = new System.Drawing.Size(67, 65);
+            this.StairsUpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StairsUpPictureBox.TabIndex = 9;
+            this.StairsUpPictureBox.TabStop = false;
+            // 
+            // StairsDownPictureBox
+            // 
+            this.StairsDownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.lowerstairs;
+            this.StairsDownPictureBox.Location = new System.Drawing.Point(37, 132);
+            this.StairsDownPictureBox.Name = "StairsDownPictureBox";
+            this.StairsDownPictureBox.Size = new System.Drawing.Size(67, 65);
+            this.StairsDownPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StairsDownPictureBox.TabIndex = 8;
+            this.StairsDownPictureBox.TabStop = false;
+            // 
+            // PausePictureBox
+            // 
+            this.PausePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.pausebutton;
+            this.PausePictureBox.Location = new System.Drawing.Point(148, 53);
+            this.PausePictureBox.Name = "PausePictureBox";
+            this.PausePictureBox.Size = new System.Drawing.Size(55, 52);
+            this.PausePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PausePictureBox.TabIndex = 7;
+            this.PausePictureBox.TabStop = false;
+            // 
+            // CloseDoorsPictureBox
+            // 
+            this.CloseDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.closedoors;
+            this.CloseDoorsPictureBox.Location = new System.Drawing.Point(256, 35);
+            this.CloseDoorsPictureBox.Name = "CloseDoorsPictureBox";
+            this.CloseDoorsPictureBox.Size = new System.Drawing.Size(67, 65);
+            this.CloseDoorsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CloseDoorsPictureBox.TabIndex = 6;
+            this.CloseDoorsPictureBox.TabStop = false;
+            // 
+            // OpenDoorsPictureBox
+            // 
+            this.OpenDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.opendoors;
+            this.OpenDoorsPictureBox.Location = new System.Drawing.Point(37, 35);
+            this.OpenDoorsPictureBox.Name = "OpenDoorsPictureBox";
+            this.OpenDoorsPictureBox.Size = new System.Drawing.Size(67, 65);
+            this.OpenDoorsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OpenDoorsPictureBox.TabIndex = 5;
+            this.OpenDoorsPictureBox.TabStop = false;
+            // 
+            // UpStairsLabel
+            // 
+            this.UpStairsLabel.AutoSize = true;
+            this.UpStairsLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.UpStairsLabel.Location = new System.Drawing.Point(220, 103);
+            this.UpStairsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UpStairsLabel.Name = "UpStairsLabel";
+            this.UpStairsLabel.Size = new System.Drawing.Size(147, 28);
+            this.UpStairsLabel.TabIndex = 4;
+            this.UpStairsLabel.Text = "Ανέβασμα Σκάλας";
+            this.UpStairsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UpStairsLabel.UseCompatibleTextRendering = true;
+            // 
+            // DownStairsLabel
+            // 
+            this.DownStairsLabel.AutoSize = true;
+            this.DownStairsLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.DownStairsLabel.Location = new System.Drawing.Point(7, 103);
+            this.DownStairsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DownStairsLabel.Name = "DownStairsLabel";
+            this.DownStairsLabel.Size = new System.Drawing.Size(156, 28);
+            this.DownStairsLabel.TabIndex = 3;
+            this.DownStairsLabel.Text = "Κατέβασμα Σκάλας";
+            this.DownStairsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DownStairsLabel.UseCompatibleTextRendering = true;
+            // 
+            // PauseLabel
+            // 
+            this.PauseLabel.AutoSize = true;
+            this.PauseLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.PauseLabel.Location = new System.Drawing.Point(148, 22);
+            this.PauseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PauseLabel.Name = "PauseLabel";
+            this.PauseLabel.Size = new System.Drawing.Size(59, 28);
+            this.PauseLabel.TabIndex = 2;
+            this.PauseLabel.Text = "Παύση";
+            this.PauseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PauseLabel.UseCompatibleTextRendering = true;
+            // 
+            // CloseDoorLabel
+            // 
+            this.CloseDoorLabel.AutoSize = true;
+            this.CloseDoorLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseDoorLabel.Location = new System.Drawing.Point(229, 4);
+            this.CloseDoorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CloseDoorLabel.Name = "CloseDoorLabel";
+            this.CloseDoorLabel.Size = new System.Drawing.Size(138, 28);
+            this.CloseDoorLabel.TabIndex = 1;
+            this.CloseDoorLabel.Text = "Κλείσιμο Πόρτας";
+            this.CloseDoorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CloseDoorLabel.UseCompatibleTextRendering = true;
+            // 
+            // OpenDoorLabel
+            // 
+            this.OpenDoorLabel.AutoSize = true;
+            this.OpenDoorLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpenDoorLabel.Location = new System.Drawing.Point(16, 4);
+            this.OpenDoorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OpenDoorLabel.Name = "OpenDoorLabel";
+            this.OpenDoorLabel.Size = new System.Drawing.Size(137, 28);
+            this.OpenDoorLabel.TabIndex = 0;
+            this.OpenDoorLabel.Text = "Άνοιγμα Πόρτας";
+            this.OpenDoorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.OpenDoorLabel.UseCompatibleTextRendering = true;
+            // 
+            // OkPictureBox
+            // 
+            this.OkPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.okbutton;
+            this.OkPictureBox.Location = new System.Drawing.Point(653, 425);
+            this.OkPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.OkPictureBox.Name = "OkPictureBox";
+            this.OkPictureBox.Size = new System.Drawing.Size(56, 61);
+            this.OkPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OkPictureBox.TabIndex = 6;
+            this.OkPictureBox.TabStop = false;
+            this.OkPictureBox.Visible = false;
+            // 
+            // UpPictureBox
+            // 
+            this.UpPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonup;
+            this.UpPictureBox.Location = new System.Drawing.Point(653, 349);
+            this.UpPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.UpPictureBox.Name = "UpPictureBox";
+            this.UpPictureBox.Size = new System.Drawing.Size(56, 70);
+            this.UpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UpPictureBox.TabIndex = 5;
+            this.UpPictureBox.TabStop = false;
+            this.UpPictureBox.Visible = false;
+            // 
+            // LeftPictureBox
+            // 
+            this.LeftPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonleft;
+            this.LeftPictureBox.Location = new System.Drawing.Point(593, 421);
+            this.LeftPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.LeftPictureBox.Name = "LeftPictureBox";
+            this.LeftPictureBox.Size = new System.Drawing.Size(56, 70);
+            this.LeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LeftPictureBox.TabIndex = 4;
+            this.LeftPictureBox.TabStop = false;
+            this.LeftPictureBox.Visible = false;
+            // 
+            // RightPictureBox
+            // 
+            this.RightPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonright;
+            this.RightPictureBox.Location = new System.Drawing.Point(713, 422);
+            this.RightPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.RightPictureBox.Name = "RightPictureBox";
+            this.RightPictureBox.Size = new System.Drawing.Size(56, 69);
+            this.RightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RightPictureBox.TabIndex = 3;
+            this.RightPictureBox.TabStop = false;
+            this.RightPictureBox.Visible = false;
+            // 
+            // DownPictureBox
+            // 
+            this.DownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttondown;
+            this.DownPictureBox.Location = new System.Drawing.Point(653, 492);
+            this.DownPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.DownPictureBox.Name = "DownPictureBox";
+            this.DownPictureBox.Size = new System.Drawing.Size(56, 70);
+            this.DownPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DownPictureBox.TabIndex = 2;
+            this.DownPictureBox.TabStop = false;
+            this.DownPictureBox.Visible = false;
             // 
             // startEnginePictureBox
             // 
             this.startEnginePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.startEnginePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.enginestart;
-            this.startEnginePictureBox.Location = new System.Drawing.Point(718, 309);
+            this.startEnginePictureBox.Location = new System.Drawing.Point(406, 425);
+            this.startEnginePictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.startEnginePictureBox.Name = "startEnginePictureBox";
-            this.startEnginePictureBox.Size = new System.Drawing.Size(143, 122);
+            this.startEnginePictureBox.Size = new System.Drawing.Size(141, 141);
             this.startEnginePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.startEnginePictureBox.TabIndex = 1;
             this.startEnginePictureBox.TabStop = false;
@@ -137,8 +364,9 @@
             this.HotelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.330832F));
             this.HotelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0025F));
             this.HotelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.330832F));
-            this.HotelMap.Size = new System.Drawing.Size(674, 490);
+            this.HotelMap.Size = new System.Drawing.Size(539, 490);
             this.HotelMap.TabIndex = 0;
+            this.HotelMap.Visible = false;
             // 
             // label12
             // 
@@ -147,10 +375,10 @@
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(506, 446);
+            this.label12.Location = new System.Drawing.Point(404, 446);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(166, 44);
+            this.label12.Size = new System.Drawing.Size(133, 44);
             this.label12.TabIndex = 23;
             this.label12.Text = "Ο κάμπος της Αρτέμιδος";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,10 +391,10 @@
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(338, 446);
+            this.label11.Location = new System.Drawing.Point(270, 446);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(164, 44);
+            this.label11.Size = new System.Drawing.Size(130, 44);
             this.label11.TabIndex = 22;
             this.label11.Text = "Χώρος Στάθμευσης 2";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -179,10 +407,10 @@
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(170, 446);
+            this.label10.Location = new System.Drawing.Point(136, 446);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(164, 44);
+            this.label10.Size = new System.Drawing.Size(130, 44);
             this.label10.TabIndex = 21;
             this.label10.Text = "Είσοδος Παλατιού";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,7 +426,7 @@
             this.label9.Location = new System.Drawing.Point(2, 446);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 44);
+            this.label9.Size = new System.Drawing.Size(130, 44);
             this.label9.TabIndex = 20;
             this.label9.Text = "Χώρος Στάθμευσης 1";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,10 +436,10 @@
             // 
             this.ArtemisCampPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ArtemisCampPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.campingsite;
-            this.ArtemisCampPictureBox.Location = new System.Drawing.Point(506, 326);
+            this.ArtemisCampPictureBox.Location = new System.Drawing.Point(404, 326);
             this.ArtemisCampPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.ArtemisCampPictureBox.Name = "ArtemisCampPictureBox";
-            this.ArtemisCampPictureBox.Size = new System.Drawing.Size(166, 118);
+            this.ArtemisCampPictureBox.Size = new System.Drawing.Size(133, 118);
             this.ArtemisCampPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ArtemisCampPictureBox.TabIndex = 19;
             this.ArtemisCampPictureBox.TabStop = false;
@@ -220,10 +448,10 @@
             // 
             this.parking2PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.parking2PictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.parkinglogo;
-            this.parking2PictureBox.Location = new System.Drawing.Point(338, 326);
+            this.parking2PictureBox.Location = new System.Drawing.Point(270, 326);
             this.parking2PictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.parking2PictureBox.Name = "parking2PictureBox";
-            this.parking2PictureBox.Size = new System.Drawing.Size(164, 118);
+            this.parking2PictureBox.Size = new System.Drawing.Size(130, 118);
             this.parking2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.parking2PictureBox.TabIndex = 18;
             this.parking2PictureBox.TabStop = false;
@@ -232,10 +460,10 @@
             // 
             this.palaceEntrancePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.palaceEntrancePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.entrance;
-            this.palaceEntrancePictureBox.Location = new System.Drawing.Point(170, 326);
+            this.palaceEntrancePictureBox.Location = new System.Drawing.Point(136, 326);
             this.palaceEntrancePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.palaceEntrancePictureBox.Name = "palaceEntrancePictureBox";
-            this.palaceEntrancePictureBox.Size = new System.Drawing.Size(164, 118);
+            this.palaceEntrancePictureBox.Size = new System.Drawing.Size(130, 118);
             this.palaceEntrancePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.palaceEntrancePictureBox.TabIndex = 17;
             this.palaceEntrancePictureBox.TabStop = false;
@@ -247,7 +475,7 @@
             this.parking1PictureBox.Location = new System.Drawing.Point(2, 326);
             this.parking1PictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.parking1PictureBox.Name = "parking1PictureBox";
-            this.parking1PictureBox.Size = new System.Drawing.Size(164, 118);
+            this.parking1PictureBox.Size = new System.Drawing.Size(130, 118);
             this.parking1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.parking1PictureBox.TabIndex = 16;
             this.parking1PictureBox.TabStop = false;
@@ -259,10 +487,10 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(506, 284);
+            this.label8.Location = new System.Drawing.Point(404, 284);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 40);
+            this.label8.Size = new System.Drawing.Size(133, 40);
             this.label8.TabIndex = 15;
             this.label8.Text = "Το Δάσος των Δρυάδων";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -275,10 +503,10 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(338, 284);
+            this.label7.Location = new System.Drawing.Point(270, 284);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(164, 40);
+            this.label7.Size = new System.Drawing.Size(130, 40);
             this.label7.TabIndex = 14;
             this.label7.Text = "Το Καφενείο των Μουσών";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,12 +517,12 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.RoyalBlue;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(170, 284);
+            this.label6.Location = new System.Drawing.Point(136, 284);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 40);
+            this.label6.Size = new System.Drawing.Size(130, 40);
             this.label6.TabIndex = 13;
             this.label6.Text = "Η Πλατεία του Απόλλωνα";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,12 +533,12 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.RoyalBlue;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(2, 284);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 40);
+            this.label5.Size = new System.Drawing.Size(130, 40);
             this.label5.TabIndex = 12;
             this.label5.Text = "Τα Λουτρά της Ωραίας Ελένης";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,10 +548,10 @@
             // 
             this.driadForestPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.driadForestPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.forest;
-            this.driadForestPictureBox.Location = new System.Drawing.Point(506, 164);
+            this.driadForestPictureBox.Location = new System.Drawing.Point(404, 164);
             this.driadForestPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.driadForestPictureBox.Name = "driadForestPictureBox";
-            this.driadForestPictureBox.Size = new System.Drawing.Size(166, 118);
+            this.driadForestPictureBox.Size = new System.Drawing.Size(133, 118);
             this.driadForestPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.driadForestPictureBox.TabIndex = 11;
             this.driadForestPictureBox.TabStop = false;
@@ -332,10 +560,10 @@
             // 
             this.MousesCafePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MousesCafePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.musecoffee;
-            this.MousesCafePictureBox.Location = new System.Drawing.Point(338, 164);
+            this.MousesCafePictureBox.Location = new System.Drawing.Point(270, 164);
             this.MousesCafePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.MousesCafePictureBox.Name = "MousesCafePictureBox";
-            this.MousesCafePictureBox.Size = new System.Drawing.Size(164, 118);
+            this.MousesCafePictureBox.Size = new System.Drawing.Size(130, 118);
             this.MousesCafePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MousesCafePictureBox.TabIndex = 10;
             this.MousesCafePictureBox.TabStop = false;
@@ -344,10 +572,10 @@
             // 
             this.apollosSquarePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.apollosSquarePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.campingarea;
-            this.apollosSquarePictureBox.Location = new System.Drawing.Point(170, 164);
+            this.apollosSquarePictureBox.Location = new System.Drawing.Point(136, 164);
             this.apollosSquarePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.apollosSquarePictureBox.Name = "apollosSquarePictureBox";
-            this.apollosSquarePictureBox.Size = new System.Drawing.Size(164, 118);
+            this.apollosSquarePictureBox.Size = new System.Drawing.Size(130, 118);
             this.apollosSquarePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.apollosSquarePictureBox.TabIndex = 9;
             this.apollosSquarePictureBox.TabStop = false;
@@ -359,7 +587,7 @@
             this.helensShowerPictureBox.Location = new System.Drawing.Point(2, 164);
             this.helensShowerPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.helensShowerPictureBox.Name = "helensShowerPictureBox";
-            this.helensShowerPictureBox.Size = new System.Drawing.Size(164, 118);
+            this.helensShowerPictureBox.Size = new System.Drawing.Size(130, 118);
             this.helensShowerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.helensShowerPictureBox.TabIndex = 8;
             this.helensShowerPictureBox.TabStop = false;
@@ -369,12 +597,12 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.RoyalBlue;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(506, 122);
+            this.label4.Location = new System.Drawing.Point(404, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(166, 40);
+            this.label4.Size = new System.Drawing.Size(133, 40);
             this.label4.TabIndex = 7;
             this.label4.Text = "Το Λιβάδι των Κενταύρων";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,12 +613,12 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.RoyalBlue;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(338, 122);
+            this.label3.Location = new System.Drawing.Point(270, 122);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 40);
+            this.label3.Size = new System.Drawing.Size(130, 40);
             this.label3.TabIndex = 6;
             this.label3.Text = "Ο Κήπος του Ολύμπου";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,12 +629,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.RoyalBlue;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(170, 122);
+            this.label2.Location = new System.Drawing.Point(136, 122);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 40);
+            this.label2.Size = new System.Drawing.Size(130, 40);
             this.label2.TabIndex = 5;
             this.label2.Text = "Το Παλάτι του Δία";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -416,10 +644,10 @@
             // 
             this.centaurFieldPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centaurFieldPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.valley;
-            this.centaurFieldPictureBox.Location = new System.Drawing.Point(506, 2);
+            this.centaurFieldPictureBox.Location = new System.Drawing.Point(404, 2);
             this.centaurFieldPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.centaurFieldPictureBox.Name = "centaurFieldPictureBox";
-            this.centaurFieldPictureBox.Size = new System.Drawing.Size(166, 118);
+            this.centaurFieldPictureBox.Size = new System.Drawing.Size(133, 118);
             this.centaurFieldPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.centaurFieldPictureBox.TabIndex = 3;
             this.centaurFieldPictureBox.TabStop = false;
@@ -428,10 +656,10 @@
             // 
             this.zeusGardenPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zeusGardenPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.OlympusGarden;
-            this.zeusGardenPictureBox.Location = new System.Drawing.Point(338, 2);
+            this.zeusGardenPictureBox.Location = new System.Drawing.Point(270, 2);
             this.zeusGardenPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.zeusGardenPictureBox.Name = "zeusGardenPictureBox";
-            this.zeusGardenPictureBox.Size = new System.Drawing.Size(164, 118);
+            this.zeusGardenPictureBox.Size = new System.Drawing.Size(130, 118);
             this.zeusGardenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.zeusGardenPictureBox.TabIndex = 2;
             this.zeusGardenPictureBox.TabStop = false;
@@ -440,10 +668,10 @@
             // 
             this.zeusPalacePictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zeusPalacePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.Palace;
-            this.zeusPalacePictureBox.Location = new System.Drawing.Point(170, 2);
+            this.zeusPalacePictureBox.Location = new System.Drawing.Point(136, 2);
             this.zeusPalacePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.zeusPalacePictureBox.Name = "zeusPalacePictureBox";
-            this.zeusPalacePictureBox.Size = new System.Drawing.Size(164, 118);
+            this.zeusPalacePictureBox.Size = new System.Drawing.Size(130, 118);
             this.zeusPalacePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.zeusPalacePictureBox.TabIndex = 1;
             this.zeusPalacePictureBox.TabStop = false;
@@ -455,7 +683,7 @@
             this.marketAreaPictureBox.Location = new System.Drawing.Point(2, 2);
             this.marketAreaPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.marketAreaPictureBox.Name = "marketAreaPictureBox";
-            this.marketAreaPictureBox.Size = new System.Drawing.Size(164, 118);
+            this.marketAreaPictureBox.Size = new System.Drawing.Size(130, 118);
             this.marketAreaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.marketAreaPictureBox.TabIndex = 0;
             this.marketAreaPictureBox.TabStop = false;
@@ -465,12 +693,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.RoyalBlue;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(2, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 40);
+            this.label1.Size = new System.Drawing.Size(130, 40);
             this.label1.TabIndex = 4;
             this.label1.Text = "Η αγορά του Ερμή";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -478,16 +706,28 @@
             // 
             // TrojanHorse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 562);
+            this.ClientSize = new System.Drawing.Size(900, 596);
             this.Controls.Add(this.ControlPanel);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "TrojanHorse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrojanHorse";
             this.ControlPanel.ResumeLayout(false);
+            this.DoorControlPanel.ResumeLayout(false);
+            this.DoorControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StairsDownPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PausePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseDoorsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OpenDoorsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OkPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LeftPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RightPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DownPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.startEnginePictureBox)).EndInit();
             this.HotelMap.ResumeLayout(false);
             this.HotelMap.PerformLayout();
@@ -536,5 +776,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox startEnginePictureBox;
+        private System.Windows.Forms.PictureBox OkPictureBox;
+        private System.Windows.Forms.PictureBox UpPictureBox;
+        private System.Windows.Forms.PictureBox LeftPictureBox;
+        private System.Windows.Forms.PictureBox RightPictureBox;
+        private System.Windows.Forms.PictureBox DownPictureBox;
+        private System.Windows.Forms.Panel DoorControlPanel;
+        private System.Windows.Forms.Label UpStairsLabel;
+        private System.Windows.Forms.Label DownStairsLabel;
+        private System.Windows.Forms.Label PauseLabel;
+        private System.Windows.Forms.Label CloseDoorLabel;
+        private System.Windows.Forms.Label OpenDoorLabel;
+        private System.Windows.Forms.PictureBox PausePictureBox;
+        private System.Windows.Forms.PictureBox CloseDoorsPictureBox;
+        private System.Windows.Forms.PictureBox OpenDoorsPictureBox;
+        private System.Windows.Forms.PictureBox StairsUpPictureBox;
+        private System.Windows.Forms.PictureBox StairsDownPictureBox;
     }
 }
