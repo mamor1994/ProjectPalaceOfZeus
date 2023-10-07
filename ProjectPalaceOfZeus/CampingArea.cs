@@ -35,7 +35,7 @@ namespace ProjectPalaceOfZeus
             if (clickableArea.Contains(e.Location))
             {
                 MessageBox.Show("Είσοδος στο Δούρειο Ίππο");
-                TrojanHorse trojanHorse = new TrojanHorse();
+                TrojanHorse trojanHorse = new TrojanHorse(3,4);
                 trojanHorse.Show();
                 this.Hide();
             }

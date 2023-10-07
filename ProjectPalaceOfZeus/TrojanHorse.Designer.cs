@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.DoorControlPanel = new System.Windows.Forms.Panel();
             this.StairsUpPictureBox = new System.Windows.Forms.PictureBox();
@@ -67,10 +68,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.centaurFieldPictureBox = new System.Windows.Forms.PictureBox();
-            this.zeusGardenPictureBox = new System.Windows.Forms.PictureBox();
+            this.olympusGardenPictureBox = new System.Windows.Forms.PictureBox();
             this.zeusPalacePictureBox = new System.Windows.Forms.PictureBox();
             this.marketAreaPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.DoorTimer = new System.Windows.Forms.Timer(this.components);
+            this.StairsTimer = new System.Windows.Forms.Timer(this.components);
             this.ControlPanel.SuspendLayout();
             this.DoorControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).BeginInit();
@@ -94,7 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.apollosSquarePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.helensShowerPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.centaurFieldPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zeusGardenPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.olympusGardenPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zeusPalacePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marketAreaPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -138,6 +141,7 @@
             // 
             // StairsUpPictureBox
             // 
+            this.StairsUpPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StairsUpPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.raisestairs;
             this.StairsUpPictureBox.Location = new System.Drawing.Point(256, 132);
             this.StairsUpPictureBox.Name = "StairsUpPictureBox";
@@ -145,9 +149,12 @@
             this.StairsUpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StairsUpPictureBox.TabIndex = 9;
             this.StairsUpPictureBox.TabStop = false;
+            this.StairsUpPictureBox.Click += new System.EventHandler(this.StairsUpPictureBox_Click);
             // 
             // StairsDownPictureBox
             // 
+            this.StairsDownPictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.StairsDownPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StairsDownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.lowerstairs;
             this.StairsDownPictureBox.Location = new System.Drawing.Point(37, 132);
             this.StairsDownPictureBox.Name = "StairsDownPictureBox";
@@ -155,9 +162,11 @@
             this.StairsDownPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StairsDownPictureBox.TabIndex = 8;
             this.StairsDownPictureBox.TabStop = false;
+            this.StairsDownPictureBox.Click += new System.EventHandler(this.StairsDownPictureBox_Click);
             // 
             // PausePictureBox
             // 
+            this.PausePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PausePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.pausebutton;
             this.PausePictureBox.Location = new System.Drawing.Point(148, 53);
             this.PausePictureBox.Name = "PausePictureBox";
@@ -165,9 +174,11 @@
             this.PausePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PausePictureBox.TabIndex = 7;
             this.PausePictureBox.TabStop = false;
+            this.PausePictureBox.Click += new System.EventHandler(this.PausePictureBox_Click);
             // 
             // CloseDoorsPictureBox
             // 
+            this.CloseDoorsPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.closedoors;
             this.CloseDoorsPictureBox.Location = new System.Drawing.Point(256, 35);
             this.CloseDoorsPictureBox.Name = "CloseDoorsPictureBox";
@@ -175,9 +186,11 @@
             this.CloseDoorsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.CloseDoorsPictureBox.TabIndex = 6;
             this.CloseDoorsPictureBox.TabStop = false;
+            this.CloseDoorsPictureBox.Click += new System.EventHandler(this.CloseDoorsPictureBox_Click);
             // 
             // OpenDoorsPictureBox
             // 
+            this.OpenDoorsPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OpenDoorsPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.opendoors;
             this.OpenDoorsPictureBox.Location = new System.Drawing.Point(37, 35);
             this.OpenDoorsPictureBox.Name = "OpenDoorsPictureBox";
@@ -185,6 +198,7 @@
             this.OpenDoorsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OpenDoorsPictureBox.TabIndex = 5;
             this.OpenDoorsPictureBox.TabStop = false;
+            this.OpenDoorsPictureBox.Click += new System.EventHandler(this.OpenDoorsPictureBox_Click);
             // 
             // UpStairsLabel
             // 
@@ -253,6 +267,7 @@
             // 
             // OkPictureBox
             // 
+            this.OkPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.OkPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.okbutton;
             this.OkPictureBox.Location = new System.Drawing.Point(653, 425);
             this.OkPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -265,6 +280,7 @@
             // 
             // UpPictureBox
             // 
+            this.UpPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.UpPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonup;
             this.UpPictureBox.Location = new System.Drawing.Point(653, 349);
             this.UpPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -277,6 +293,7 @@
             // 
             // LeftPictureBox
             // 
+            this.LeftPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LeftPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonleft;
             this.LeftPictureBox.Location = new System.Drawing.Point(593, 421);
             this.LeftPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -289,6 +306,7 @@
             // 
             // RightPictureBox
             // 
+            this.RightPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.RightPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonright;
             this.RightPictureBox.Location = new System.Drawing.Point(713, 422);
             this.RightPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -301,6 +319,7 @@
             // 
             // DownPictureBox
             // 
+            this.DownPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttondown;
             this.DownPictureBox.Location = new System.Drawing.Point(653, 492);
             this.DownPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -322,6 +341,7 @@
             this.startEnginePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.startEnginePictureBox.TabIndex = 1;
             this.startEnginePictureBox.TabStop = false;
+            this.startEnginePictureBox.Click += new System.EventHandler(this.startEnginePictureBox_Click);
             // 
             // HotelMap
             // 
@@ -350,7 +370,7 @@
             this.HotelMap.Controls.Add(this.label3, 2, 1);
             this.HotelMap.Controls.Add(this.label2, 1, 1);
             this.HotelMap.Controls.Add(this.centaurFieldPictureBox, 3, 0);
-            this.HotelMap.Controls.Add(this.zeusGardenPictureBox, 2, 0);
+            this.HotelMap.Controls.Add(this.olympusGardenPictureBox, 2, 0);
             this.HotelMap.Controls.Add(this.zeusPalacePictureBox, 1, 0);
             this.HotelMap.Controls.Add(this.marketAreaPictureBox, 0, 0);
             this.HotelMap.Controls.Add(this.label1, 0, 1);
@@ -652,17 +672,17 @@
             this.centaurFieldPictureBox.TabIndex = 3;
             this.centaurFieldPictureBox.TabStop = false;
             // 
-            // zeusGardenPictureBox
+            // olympusGardenPictureBox
             // 
-            this.zeusGardenPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zeusGardenPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.OlympusGarden;
-            this.zeusGardenPictureBox.Location = new System.Drawing.Point(270, 2);
-            this.zeusGardenPictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.zeusGardenPictureBox.Name = "zeusGardenPictureBox";
-            this.zeusGardenPictureBox.Size = new System.Drawing.Size(130, 118);
-            this.zeusGardenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zeusGardenPictureBox.TabIndex = 2;
-            this.zeusGardenPictureBox.TabStop = false;
+            this.olympusGardenPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.olympusGardenPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.OlympusGarden;
+            this.olympusGardenPictureBox.Location = new System.Drawing.Point(270, 2);
+            this.olympusGardenPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.olympusGardenPictureBox.Name = "olympusGardenPictureBox";
+            this.olympusGardenPictureBox.Size = new System.Drawing.Size(130, 118);
+            this.olympusGardenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.olympusGardenPictureBox.TabIndex = 2;
+            this.olympusGardenPictureBox.TabStop = false;
             // 
             // zeusPalacePictureBox
             // 
@@ -704,6 +724,16 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseCompatibleTextRendering = true;
             // 
+            // DoorTimer
+            // 
+            this.DoorTimer.Interval = 7000;
+            this.DoorTimer.Tick += new System.EventHandler(this.DoorTimer_Tick);
+            // 
+            // StairsTimer
+            // 
+            this.StairsTimer.Interval = 7000;
+            this.StairsTimer.Tick += new System.EventHandler(this.StairsTimer_Tick);
+            // 
             // TrojanHorse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -711,10 +741,12 @@
             this.ClientSize = new System.Drawing.Size(900, 596);
             this.Controls.Add(this.ControlPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "TrojanHorse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrojanHorse";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TrojanHorse_KeyDown);
             this.ControlPanel.ResumeLayout(false);
             this.DoorControlPanel.ResumeLayout(false);
             this.DoorControlPanel.PerformLayout();
@@ -740,7 +772,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.apollosSquarePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.helensShowerPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.centaurFieldPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zeusGardenPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.olympusGardenPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zeusPalacePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marketAreaPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -752,7 +784,7 @@
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.TableLayoutPanel HotelMap;
         private System.Windows.Forms.PictureBox centaurFieldPictureBox;
-        private System.Windows.Forms.PictureBox zeusGardenPictureBox;
+        private System.Windows.Forms.PictureBox olympusGardenPictureBox;
         private System.Windows.Forms.PictureBox zeusPalacePictureBox;
         private System.Windows.Forms.PictureBox marketAreaPictureBox;
         private System.Windows.Forms.Label label12;
@@ -792,5 +824,7 @@
         private System.Windows.Forms.PictureBox OpenDoorsPictureBox;
         private System.Windows.Forms.PictureBox StairsUpPictureBox;
         private System.Windows.Forms.PictureBox StairsDownPictureBox;
+        private System.Windows.Forms.Timer DoorTimer;
+        private System.Windows.Forms.Timer StairsTimer;
     }
 }
