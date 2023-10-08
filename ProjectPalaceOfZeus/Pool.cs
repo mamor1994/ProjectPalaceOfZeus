@@ -25,12 +25,18 @@ namespace ProjectPalaceOfZeus
             if (alarmActivated)
             {
                 alarmActivated = false;
-                MessageBox.Show("Ο συναγερμός είναι απενεργοποιημένος!", "Απενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblMessage1.Show(); 
+                lblMessage1.Text = "Ο συναγερμός είναι απενεργοποιημένος!";
+                timer1.Start();
+                //MessageBox.Show("Ο συναγερμός είναι απενεργοποιημένος!", "Απενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 alarmActivated = true;
-                MessageBox.Show("Ο συναγερμός είναι ενεργοποιημένος!", "Ενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblMessage1.Show();
+                lblMessage1.Text = "Ο συναγερμός είναι ενεργοποιημένος!";
+                timer1.Start();
+                //MessageBox.Show("Ο συναγερμός είναι ενεργοποιημένος!", "Ενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
         }
@@ -63,6 +69,16 @@ namespace ProjectPalaceOfZeus
             {
                 Application.Exit();
             }
+        }
+
+        private void Pool_Load(object sender, EventArgs e)
+        {
+            lblMessage.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblMessage1.Hide();
         }
     }
 }
