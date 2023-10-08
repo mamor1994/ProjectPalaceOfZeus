@@ -58,7 +58,26 @@ namespace ProjectPalaceOfZeus
             pictureBox2.Visible = false;
             pictureBox3.Visible = true;
             label2.Visible = false;
-            pictureBox4.Visible = true;   
+            pictureBox4.Visible = true;
+            button3.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox4.Visible= false;
+            button3.Visible= false;
+            pictureBox2.Visible = true;
+            button1.Visible = true;
+            button2.Visible= true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Visible= false;
+            button1.Visible = false;
+            button2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox2.Visible = false;
         }
     }
 }

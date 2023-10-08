@@ -442,5 +442,14 @@
   <ItemGroup>
     <None Include="images\barcode.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greekmenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
