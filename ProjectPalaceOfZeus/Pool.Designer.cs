@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pool));
             this.trackBarTemperature = new System.Windows.Forms.TrackBar();
             this.btnTogglePool = new System.Windows.Forms.Button();
@@ -36,6 +37,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMessage = new System.Windows.Forms.Label();
+            this.lblMessage1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTemperature)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -118,17 +121,34 @@
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(254, 208);
+            this.lblMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblMessage.Location = new System.Drawing.Point(194, 213);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(14, 16);
+            this.lblMessage.Size = new System.Drawing.Size(0, 16);
             this.lblMessage.TabIndex = 10;
-            this.lblMessage.Text = "k";
+            // 
+            // lblMessage1
+            // 
+            this.lblMessage1.AutoSize = true;
+            this.lblMessage1.BackColor = System.Drawing.Color.Transparent;
+            this.lblMessage1.Location = new System.Drawing.Point(194, 234);
+            this.lblMessage1.Name = "lblMessage1";
+            this.lblMessage1.Size = new System.Drawing.Size(10, 16);
+            this.lblMessage1.TabIndex = 11;
+            this.lblMessage1.Text = "l";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Pool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1097, 586);
+            this.Controls.Add(this.lblMessage1);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnTogglePool);
             this.Controls.Add(this.pictureBox2);
@@ -141,6 +161,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pool";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pool_FormClosing);
+            this.Load += new System.EventHandler(this.Pool_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTemperature)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -158,5 +179,7 @@
         private System.Windows.Forms.Label lblTemperature;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Label lblMessage1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

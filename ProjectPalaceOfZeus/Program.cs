@@ -16,7 +16,7 @@ namespace ProjectPalaceOfZeus
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CampingArea());
+            Application.Run(new ParkingArea1());
         }
     }
 }

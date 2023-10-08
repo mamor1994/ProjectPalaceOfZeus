@@ -63,6 +63,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _313927093_482418940388558_6281749347256663031_n_copy {
+            get {
+                object obj = ResourceManager.GetObject("313927093_482418940388558_6281749347256663031_n copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap campingarea {
             get {
                 object obj = ResourceManager.GetObject("campingarea", resourceCulture);
