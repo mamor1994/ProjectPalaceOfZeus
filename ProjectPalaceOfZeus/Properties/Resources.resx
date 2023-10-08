@@ -124,11 +124,14 @@
   <data name="trhorse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trhorse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RoomPool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\RoomPool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="room1_on_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_on_lights\room1_on_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tv_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_tv\tv_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opendoors!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opendoors!.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tv_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_tv\tv_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,14 +139,20 @@
   <data name="closedoors!" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closedoors!.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="raisestairs!!" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\raisestairs!!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="marketarea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\marketarea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="goback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goback.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MicrosoftTeams-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MicrosoftTeams-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dirbuttondown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dirbuttondown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pausebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pausebutton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dirbuttonleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dirbuttonleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,29 +169,29 @@
   <data name="curtain_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_curtain\curtain_on.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\Restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="closedoors" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closedoors.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="parkingarea11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parkingarea11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restaurant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\Restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restaurant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\restaurant1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="parkingarea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parkingarea1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RoomPool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\RoomPool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloud2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cloud2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="opendoors" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\opendoors.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="room1_on_curtain_off_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_off_lights\room1_on_curtain_off_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="room1_on_tv_and_on_curtain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_on_lights\room1_on_tv_and_on_curtain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +217,9 @@
   <data name="Return" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\cloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="returnbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\returnbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,8 +229,11 @@
   <data name="cockpit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cockpit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="goback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goback.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="raisestairs!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raisestairs!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waiter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\waiter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="curtain_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_curtain\curtain_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,17 +256,11 @@
   <data name="trhorse2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trhorse2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lowerstairs!!" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lowerstairs!!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="room1_lights_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_off_lights\room1_lights_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icon_lights\icon_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room1_on_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\room_on_lights\room1_on_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="entrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\entrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,14 +268,17 @@
   <data name="room1_off_tv_and_on_curtain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_on_lights\room1_off_tv_and_on_curtain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lowerstairs!" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lowerstairs!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="opendoors!" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\opendoors!.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lowerstairs!!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lowerstairs!!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="episkepths" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\episkepths.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="313927093_482418940388558_6281749347256663031_n copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\313927093_482418940388558_6281749347256663031_n copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="raisestairs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\raisestairs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,8 +295,8 @@
   <data name="valley" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\valley.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="raisestairs!" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\raisestairs!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="marketarea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marketarea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="empty1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\places\empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -294,6 +306,9 @@
   </data>
   <data name="room1_on_tv_off_lights" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_off_lights\room1_on_tv_off_lights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room1_on_curtain_off_tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\room_off_lights\room1_on_curtain_off_tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marketarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marketarea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,8 +337,8 @@
   <data name="musecoffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musecoffee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pausebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pausebutton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\places\Restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\room_on_lights\room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,10 +349,10 @@
   <data name="forestarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forestarea.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dirbuttondown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dirbuttondown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lowerstairs!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lowerstairs!.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="313927093_482418940388558_6281749347256663031_n copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\313927093_482418940388558_6281749347256663031_n copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="barcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\barcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
