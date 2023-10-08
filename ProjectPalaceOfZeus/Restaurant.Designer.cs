@@ -318,6 +318,7 @@
             this.lblCM.TabIndex = 7;
             this.lblCM.Text = "Croque Monsieur";
             this.lblCM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCM.Click += new System.EventHandler(this.lblCM_Click);
             // 
             // pictureBox11
             // 
@@ -342,6 +343,7 @@
             this.lblToast.TabIndex = 5;
             this.lblToast.Text = "Toast";
             this.lblToast.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblToast.Click += new System.EventHandler(this.lblToast_Click);
             // 
             // pictureBox12
             // 
@@ -391,6 +393,7 @@
             this.lblCroissant.TabIndex = 9;
             this.lblCroissant.Text = "Croissant";
             this.lblCroissant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCroissant.Click += new System.EventHandler(this.lblCroissant_Click);
             // 
             // label8
             // 
@@ -534,7 +537,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.Location = new System.Drawing.Point(331, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 50);
+            this.label3.Size = new System.Drawing.Size(218, 50);
             this.label3.TabIndex = 1;
             this.label3.Text = "Περιεχόμενο";
             // 
