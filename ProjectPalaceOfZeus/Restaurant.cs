@@ -426,14 +426,22 @@ namespace ProjectPalaceOfZeus
 
             foreach (string item in selectedItems)
             {
-                //foreach (double price in selectedItemPrices)
-                //{
+                
                 ΑΠΟΔΕΙΞΗ.Items.Add($"{item} - {selectedItemPrices[i]:C}");
                 i++;
-               // }
             }
             ΑΠΟΔΕΙΞΗ.Items.Add(string.Format("Σύνολο: {0:C}", totalCost));
-           
+        }
+
+        private void ΑΠΟΔΕΙΞΗ_Click(object sender, EventArgs e)
+        {
+            ΑΠΟΔΕΙΞΗ.Visible = false;
+            totalCost = 0;
+            selectedItems.Clear();
+            selectedItemPrices.Clear();
+            ΑΠΟΔΕΙΞΗ.Items.Clear();
+            i = 0;
+            lblTotal.Text = "Total Price: ";
         }
     }
 }

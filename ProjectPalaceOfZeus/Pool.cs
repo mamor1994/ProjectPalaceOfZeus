@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,8 @@ namespace ProjectPalaceOfZeus
         private bool needToExitApp = true;
         private bool alarmActivated = false;
         private bool waterSupplyOn = false;
+        private bool isAreaVisible = true;
+
         public Pool()
         {
             InitializeComponent();
@@ -46,13 +49,13 @@ namespace ProjectPalaceOfZeus
             if (waterSupplyOn)
             {
                 waterSupplyOn = false;
-                MessageBox.Show("Η παροχή Νερού είναι απενεργοποιημένη!", "Απενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Η παροχή Νερού είναι απενεργοποιημένη!", "Απενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pictureBox2.Image = Properties.Resources.empty;
             }
             else
             {
                 waterSupplyOn = true;
-                MessageBox.Show("Η παροχή Νερού είναι ενεργοποιημένη!", "Ενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Η παροχή Νερού είναι ενεργοποιημένη!", "Ενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pictureBox2.Image = Properties.Resources.withWater;
 
             }
@@ -79,6 +82,74 @@ namespace ProjectPalaceOfZeus
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblMessage1.Hide();
+        }
+
+        private void ToTRHorsePictureBox_Click(object sender, EventArgs e)
+        {
+            if (isAreaVisible)
+            {
+                isAreaVisible = false;
+                if (waterSupplyOn == false)
+                {
+                    BackgroundImage = Properties.Resources.empty;
+                    btnToggleAlarm.Visible = false;
+                    btnTogglePool.Visible = false;
+                    trackBarTemperature.Visible = false;
+                    lblTemperature.Visible = false;
+                    lblMessage1.Visible = false;
+                    pictureBox2.Visible = false;
+                    pictureBox1.Visible = false;
+                    BackgroundImageLayout = ImageLayout.Stretch;
+                    label2.Text = "Επιστροφή σε έλεγχο" + Environment.NewLine + "της Πισίνας";
+                }
+                else if (waterSupplyOn == true)
+                {
+
+                    BackgroundImage = Properties.Resources.withWater;
+                    btnToggleAlarm.Visible = false;
+                    btnTogglePool.Visible = false;
+                    trackBarTemperature.Visible = false;
+                    lblTemperature.Visible = false;
+                    lblMessage1.Visible = false;
+                    pictureBox2.Visible = false;
+                    pictureBox1.Visible = false;
+                    BackgroundImageLayout = ImageLayout.Stretch;
+                    label2.Text = "Επιστροφή σε έλεγχο" + Environment.NewLine + "της Πισίνας";
+                }
+            }
+            else
+            {
+                isAreaVisible = true;
+                if (waterSupplyOn == false)
+                {
+                    btnToggleAlarm.Visible = true;
+                    btnTogglePool.Visible = true;
+                    trackBarTemperature.Visible = true;
+                    lblTemperature.Visible = true;
+                    lblMessage1.Visible = true;
+                    pictureBox2.Visible = true;
+                    pictureBox1.Visible = true;
+                    label2.Text = "Επιστροφή σε Πισίνα";
+                }
+                else if (waterSupplyOn == true)
+                {
+                    btnToggleAlarm.Visible = true;
+                    btnTogglePool.Visible = true;
+                    trackBarTemperature.Visible = true;
+                    lblTemperature.Visible = true;
+                    lblMessage1.Visible = true;
+                    pictureBox2.Visible = true;
+                    pictureBox1.Visible = true;
+                    label2.Text = "Επιστροφή σε Πισίνα";
+                }
+            }
+        }
+
+        private void ToHotelpictureBox_Click(object sender, EventArgs e)
+        {
+            Form form = new MainHall();
+            form.Show();
+            this.Hide();
         }
     }
 }
