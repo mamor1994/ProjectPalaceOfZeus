@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restaurant));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -41,18 +43,18 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.brunchMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.lblCM = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.lblToast = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.lblPancakes = new System.Windows.Forms.Label();
-            this.lblCroissant = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblPrice4 = new System.Windows.Forms.Label();
+            this.lblPrice3 = new System.Windows.Forms.Label();
+            this.lblPrice2 = new System.Windows.Forms.Label();
+            this.pc4 = new System.Windows.Forms.PictureBox();
+            this.lblOption3 = new System.Windows.Forms.Label();
+            this.pc3 = new System.Windows.Forms.PictureBox();
+            this.lblOption2 = new System.Windows.Forms.Label();
+            this.pc2 = new System.Windows.Forms.PictureBox();
+            this.pc1 = new System.Windows.Forms.PictureBox();
+            this.lblOption1 = new System.Windows.Forms.Label();
+            this.lblOption4 = new System.Windows.Forms.Label();
+            this.lblPrice1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.lblCoffee = new System.Windows.Forms.Label();
@@ -65,6 +67,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.ΑΠΟΔΕΙΞΗ = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,10 +78,10 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.brunchMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -200,9 +206,9 @@
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(105, 54);
+            this.panel1.Location = new System.Drawing.Point(86, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(710, 519);
+            this.panel1.Size = new System.Drawing.Size(736, 519);
             this.panel1.TabIndex = 9;
             this.panel1.Visible = false;
             // 
@@ -210,7 +216,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Segoe Script", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblTotal.Location = new System.Drawing.Point(485, 485);
+            this.lblTotal.Location = new System.Drawing.Point(459, 485);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(123, 28);
             this.lblTotal.TabIndex = 12;
@@ -232,180 +238,180 @@
             // brunchMenu
             // 
             this.brunchMenu.ColumnCount = 3;
-            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.brunchMenu.Controls.Add(this.label11, 2, 3);
-            this.brunchMenu.Controls.Add(this.label10, 2, 2);
-            this.brunchMenu.Controls.Add(this.label9, 2, 1);
-            this.brunchMenu.Controls.Add(this.pictureBox10, 0, 3);
-            this.brunchMenu.Controls.Add(this.lblCM, 1, 2);
-            this.brunchMenu.Controls.Add(this.pictureBox11, 0, 2);
-            this.brunchMenu.Controls.Add(this.lblToast, 1, 1);
-            this.brunchMenu.Controls.Add(this.pictureBox12, 0, 1);
-            this.brunchMenu.Controls.Add(this.pictureBox13, 0, 0);
-            this.brunchMenu.Controls.Add(this.lblPancakes, 1, 0);
-            this.brunchMenu.Controls.Add(this.lblCroissant, 1, 3);
-            this.brunchMenu.Controls.Add(this.label8, 2, 0);
-            this.brunchMenu.Location = new System.Drawing.Point(191, 70);
+            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.47643F));
+            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.52357F));
+            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
+            this.brunchMenu.Controls.Add(this.lblPrice4, 2, 3);
+            this.brunchMenu.Controls.Add(this.lblPrice3, 2, 2);
+            this.brunchMenu.Controls.Add(this.lblPrice2, 2, 1);
+            this.brunchMenu.Controls.Add(this.pc4, 0, 3);
+            this.brunchMenu.Controls.Add(this.lblOption3, 1, 2);
+            this.brunchMenu.Controls.Add(this.pc3, 0, 2);
+            this.brunchMenu.Controls.Add(this.lblOption2, 1, 1);
+            this.brunchMenu.Controls.Add(this.pc2, 0, 1);
+            this.brunchMenu.Controls.Add(this.pc1, 0, 0);
+            this.brunchMenu.Controls.Add(this.lblOption1, 1, 0);
+            this.brunchMenu.Controls.Add(this.lblOption4, 1, 3);
+            this.brunchMenu.Controls.Add(this.lblPrice1, 2, 0);
+            this.brunchMenu.Location = new System.Drawing.Point(182, 70);
             this.brunchMenu.Name = "brunchMenu";
-            this.brunchMenu.RowCount = 4;
+            this.brunchMenu.RowCount = 5;
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.brunchMenu.Size = new System.Drawing.Size(482, 405);
+            this.brunchMenu.Size = new System.Drawing.Size(542, 405);
             this.brunchMenu.TabIndex = 10;
             this.brunchMenu.Visible = false;
             // 
-            // label11
+            // lblPrice4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(361, 303);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 102);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "4.00€";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPrice4.AutoSize = true;
+            this.lblPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPrice4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblPrice4.Location = new System.Drawing.Point(390, 288);
+            this.lblPrice4.Name = "lblPrice4";
+            this.lblPrice4.Size = new System.Drawing.Size(149, 96);
+            this.lblPrice4.TabIndex = 13;
+            this.lblPrice4.Text = "4.00€";
+            this.lblPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // lblPrice3
             // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(361, 202);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 101);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "8.00€";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPrice3.AutoSize = true;
+            this.lblPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPrice3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblPrice3.Location = new System.Drawing.Point(390, 192);
+            this.lblPrice3.Name = "lblPrice3";
+            this.lblPrice3.Size = new System.Drawing.Size(149, 96);
+            this.lblPrice3.TabIndex = 12;
+            this.lblPrice3.Text = "8.00€";
+            this.lblPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // lblPrice2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(361, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 101);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "4.00€";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPrice2.AutoSize = true;
+            this.lblPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPrice2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblPrice2.Location = new System.Drawing.Point(390, 96);
+            this.lblPrice2.Name = "lblPrice2";
+            this.lblPrice2.Size = new System.Drawing.Size(149, 96);
+            this.lblPrice2.TabIndex = 11;
+            this.lblPrice2.Text = "4.00€";
+            this.lblPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox10
+            // pc4
             // 
-            this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox10.Image = global::ProjectPalaceOfZeus.Properties.Resources.krouasan;
-            this.pictureBox10.Location = new System.Drawing.Point(3, 306);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(173, 96);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 8;
-            this.pictureBox10.TabStop = false;
+            this.pc4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pc4.Image = global::ProjectPalaceOfZeus.Properties.Resources.krouasan;
+            this.pc4.Location = new System.Drawing.Point(3, 291);
+            this.pc4.Name = "pc4";
+            this.pc4.Size = new System.Drawing.Size(135, 90);
+            this.pc4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pc4.TabIndex = 8;
+            this.pc4.TabStop = false;
             // 
-            // lblCM
+            // lblOption3
             // 
-            this.lblCM.AutoSize = true;
-            this.lblCM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblCM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCM.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblCM.Location = new System.Drawing.Point(182, 202);
-            this.lblCM.Name = "lblCM";
-            this.lblCM.Size = new System.Drawing.Size(173, 101);
-            this.lblCM.TabIndex = 7;
-            this.lblCM.Text = "Croque Monsieur";
-            this.lblCM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCM.Click += new System.EventHandler(this.lblCM_Click);
+            this.lblOption3.AutoSize = true;
+            this.lblOption3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblOption3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOption3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblOption3.Location = new System.Drawing.Point(144, 192);
+            this.lblOption3.Name = "lblOption3";
+            this.lblOption3.Size = new System.Drawing.Size(240, 96);
+            this.lblOption3.TabIndex = 7;
+            this.lblOption3.Text = "Croque Monsieur";
+            this.lblOption3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOption3.Click += new System.EventHandler(this.lblCM_Click);
             // 
-            // pictureBox11
+            // pc3
             // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Image = global::ProjectPalaceOfZeus.Properties.Resources.eggs;
-            this.pictureBox11.Location = new System.Drawing.Point(3, 205);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(173, 95);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 6;
-            this.pictureBox11.TabStop = false;
+            this.pc3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pc3.Image = global::ProjectPalaceOfZeus.Properties.Resources.eggs;
+            this.pc3.Location = new System.Drawing.Point(3, 195);
+            this.pc3.Name = "pc3";
+            this.pc3.Size = new System.Drawing.Size(135, 90);
+            this.pc3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pc3.TabIndex = 6;
+            this.pc3.TabStop = false;
             // 
-            // lblToast
+            // lblOption2
             // 
-            this.lblToast.AutoSize = true;
-            this.lblToast.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblToast.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblToast.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblToast.Location = new System.Drawing.Point(182, 101);
-            this.lblToast.Name = "lblToast";
-            this.lblToast.Size = new System.Drawing.Size(173, 101);
-            this.lblToast.TabIndex = 5;
-            this.lblToast.Text = "Toast";
-            this.lblToast.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblToast.Click += new System.EventHandler(this.lblToast_Click);
+            this.lblOption2.AutoSize = true;
+            this.lblOption2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblOption2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOption2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblOption2.Location = new System.Drawing.Point(144, 96);
+            this.lblOption2.Name = "lblOption2";
+            this.lblOption2.Size = new System.Drawing.Size(240, 96);
+            this.lblOption2.TabIndex = 5;
+            this.lblOption2.Text = "Toast";
+            this.lblOption2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOption2.Click += new System.EventHandler(this.lblToast_Click);
             // 
-            // pictureBox12
+            // pc2
             // 
-            this.pictureBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox12.Image = global::ProjectPalaceOfZeus.Properties.Resources.toast;
-            this.pictureBox12.Location = new System.Drawing.Point(3, 104);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(173, 95);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
+            this.pc2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pc2.Image = global::ProjectPalaceOfZeus.Properties.Resources.toast;
+            this.pc2.Location = new System.Drawing.Point(3, 99);
+            this.pc2.Name = "pc2";
+            this.pc2.Size = new System.Drawing.Size(135, 90);
+            this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pc2.TabIndex = 4;
+            this.pc2.TabStop = false;
             // 
-            // pictureBox13
+            // pc1
             // 
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.Image = global::ProjectPalaceOfZeus.Properties.Resources.pancakes;
-            this.pictureBox13.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(173, 95);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
+            this.pc1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pc1.Image = global::ProjectPalaceOfZeus.Properties.Resources.κρασι;
+            this.pc1.Location = new System.Drawing.Point(3, 3);
+            this.pc1.Name = "pc1";
+            this.pc1.Size = new System.Drawing.Size(135, 90);
+            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pc1.TabIndex = 2;
+            this.pc1.TabStop = false;
             // 
-            // lblPancakes
+            // lblOption1
             // 
-            this.lblPancakes.AutoSize = true;
-            this.lblPancakes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPancakes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPancakes.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblPancakes.Location = new System.Drawing.Point(182, 0);
-            this.lblPancakes.Name = "lblPancakes";
-            this.lblPancakes.Size = new System.Drawing.Size(173, 101);
-            this.lblPancakes.TabIndex = 3;
-            this.lblPancakes.Text = "Pancakes";
-            this.lblPancakes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPancakes.Click += new System.EventHandler(this.lblPancakes_Click);
+            this.lblOption1.AutoSize = true;
+            this.lblOption1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblOption1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOption1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblOption1.Location = new System.Drawing.Point(144, 0);
+            this.lblOption1.Name = "lblOption1";
+            this.lblOption1.Size = new System.Drawing.Size(240, 96);
+            this.lblOption1.TabIndex = 3;
+            this.lblOption1.Text = "Pancakes";
+            this.lblOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOption1.Click += new System.EventHandler(this.lblPancakes_Click);
             // 
-            // lblCroissant
+            // lblOption4
             // 
-            this.lblCroissant.AutoSize = true;
-            this.lblCroissant.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblCroissant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCroissant.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblCroissant.Location = new System.Drawing.Point(182, 303);
-            this.lblCroissant.Name = "lblCroissant";
-            this.lblCroissant.Size = new System.Drawing.Size(173, 102);
-            this.lblCroissant.TabIndex = 9;
-            this.lblCroissant.Text = "Croissant";
-            this.lblCroissant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCroissant.Click += new System.EventHandler(this.lblCroissant_Click);
+            this.lblOption4.AutoSize = true;
+            this.lblOption4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblOption4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOption4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblOption4.Location = new System.Drawing.Point(144, 288);
+            this.lblOption4.Name = "lblOption4";
+            this.lblOption4.Size = new System.Drawing.Size(240, 96);
+            this.lblOption4.TabIndex = 9;
+            this.lblOption4.Text = "Croissant";
+            this.lblOption4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOption4.Click += new System.EventHandler(this.lblCroissant_Click);
             // 
-            // label8
+            // lblPrice1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(361, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 101);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "8.00€";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPrice1.AutoSize = true;
+            this.lblPrice1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPrice1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblPrice1.Location = new System.Drawing.Point(390, 0);
+            this.lblPrice1.Name = "lblPrice1";
+            this.lblPrice1.Size = new System.Drawing.Size(149, 96);
+            this.lblPrice1.TabIndex = 10;
+            this.lblPrice1.Text = "8.00€";
+            this.lblPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -537,7 +543,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.Location = new System.Drawing.Point(331, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(218, 50);
+            this.label3.Size = new System.Drawing.Size(216, 50);
             this.label3.TabIndex = 1;
             this.label3.Text = "Περιεχόμενο";
             // 
@@ -563,6 +569,32 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 2000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "receipt.png");
+            // 
+            // ΑΠΟΔΕΙΞΗ
+            // 
+            this.ΑΠΟΔΕΙΞΗ.FormattingEnabled = true;
+            this.ΑΠΟΔΕΙΞΗ.ItemHeight = 16;
+            this.ΑΠΟΔΕΙΞΗ.Location = new System.Drawing.Point(304, 160);
+            this.ΑΠΟΔΕΙΞΗ.Name = "ΑΠΟΔΕΙΞΗ";
+            this.ΑΠΟΔΕΙΞΗ.Size = new System.Drawing.Size(182, 324);
+            this.ΑΠΟΔΕΙΞΗ.TabIndex = 15;
+            this.ΑΠΟΔΕΙΞΗ.Visible = false;
+            // 
             // Restaurant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -570,6 +602,7 @@
             this.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.restaurant1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(905, 637);
+            this.Controls.Add(this.ΑΠΟΔΕΙΞΗ);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox4);
@@ -593,10 +626,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.brunchMenu.ResumeLayout(false);
             this.brunchMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -635,19 +668,23 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label lblDrinks;
         private System.Windows.Forms.TableLayoutPanel brunchMenu;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label lblCM;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label lblToast;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label lblPancakes;
-        private System.Windows.Forms.Label lblCroissant;
+        private System.Windows.Forms.PictureBox pc4;
+        private System.Windows.Forms.Label lblOption3;
+        private System.Windows.Forms.PictureBox pc3;
+        private System.Windows.Forms.Label lblOption2;
+        private System.Windows.Forms.PictureBox pc2;
+        private System.Windows.Forms.PictureBox pc1;
+        private System.Windows.Forms.Label lblOption1;
+        private System.Windows.Forms.Label lblOption4;
         private System.Windows.Forms.PictureBox btnBack;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPrice4;
+        private System.Windows.Forms.Label lblPrice3;
+        private System.Windows.Forms.Label lblPrice2;
+        private System.Windows.Forms.Label lblPrice1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ListBox ΑΠΟΔΕΙΞΗ;
     }
 }
