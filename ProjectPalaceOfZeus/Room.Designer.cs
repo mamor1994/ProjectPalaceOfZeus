@@ -59,7 +59,7 @@
             this.curtainToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(129, 495);
+            this.menuStrip1.Size = new System.Drawing.Size(131, 495);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -167,9 +167,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::ProjectPalaceOfZeus.Properties.Resources.room1;
-            this.pictureBox1.Location = new System.Drawing.Point(129, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(131, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(828, 495);
+            this.pictureBox1.Size = new System.Drawing.Size(826, 495);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

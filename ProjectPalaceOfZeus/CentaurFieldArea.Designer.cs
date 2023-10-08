@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CentaurFieldArea));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,8 +36,6 @@
             this.ToHotelpictureBox = new System.Windows.Forms.PictureBox();
             this.LocationPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,6 +61,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LocationPictureBox)).BeginInit();
@@ -154,26 +155,6 @@
             this.panel1.Size = new System.Drawing.Size(834, 511);
             this.panel1.TabIndex = 6;
             this.panel1.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(295, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 28);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Χάρτης Ξενοδοχείου";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(312, 458);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -530,6 +511,26 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.UseCompatibleTextRendering = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(312, 458);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.Location = new System.Drawing.Point(295, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 28);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Χάρτης Ξενοδοχείου";
+            // 
             // CentaurFieldArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -545,6 +546,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CentaurFieldArea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrojanHorse));
             this.DoorTimer = new System.Windows.Forms.Timer(this.components);
             this.StairsTimer = new System.Windows.Forms.Timer(this.components);
             this.TravelTimer = new System.Windows.Forms.Timer(this.components);
@@ -787,6 +788,7 @@
             this.ClientSize = new System.Drawing.Size(900, 596);
             this.Controls.Add(this.ControlPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "TrojanHorse";
