@@ -137,32 +137,32 @@ namespace ProjectPalaceOfZeus
         {
             Label label8 = (Label)sender;
             string itemName = label8.Text;
-            decimal itemPrice = GetPriceFromLabel(label8);
+           // decimal itemPrice = GetPriceFromLabel(label8);
         }
 
-        private decimal GetPriceFromLabel(Label label)
-        {
-            string priceText = label.Text.Replace("$", "");
-            return decimal.Parse(priceText);
-        }
+        //private decimal GetPriceFromLabel(Label label)
+        //{
+        //    string priceText = label.Text.Replace("$", "");
+        //    return decimal.Parse(priceText);
+        //}
 
-        private void AddItem(string item, decimal price)
-        {
+        //private void AddItem(string item, decimal price)
+        //{
 
-            selectedItems.Add(item);
-            selectedItemPrices.Add(price);
-            totalCost += price;
-            UpdateOrderDisplay();
-        }
+        //    selectedItems.Add(item);
+        //    selectedItemPrices.Add(price);
+        //    totalCost += price;
+        //    UpdateOrderDisplay();
+        //}
 
-        private void UpdateOrderDisplay()
-        {
-            orderListBox.Items.Clear();
-            foreach (string item in selectedItems)
-            {
-                orderListBox.Items.Add(item);
-            }
-            lblTotal.Text = $"Συνολικό Κόστος: {totalCost:C}";
-        }
+        //private void UpdateOrderDisplay()
+        //{
+        //    orderListBox.Items.Clear();
+        //    foreach (string item in selectedItems)
+        //    {
+        //        orderListBox.Items.Add(item);
+        //    }
+        //    lblTotal.Text = $"Συνολικό Κόστος: {totalCost:C}";
+        //}
     }
 }
