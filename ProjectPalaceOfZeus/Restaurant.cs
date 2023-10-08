@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,8 @@ namespace ProjectPalaceOfZeus
     public partial class Restaurant : Form
     {
         private List<string> selectedItems = new List<string>(); 
-        private List<decimal> selectedItemPrices = new List<decimal>(); 
-        private decimal totalCost = 0;
+        private List<double> selectedItemPrices = new List<double>(); 
+        private double totalCost = 0;
         public Restaurant()
         {
             InitializeComponent();
@@ -135,10 +136,17 @@ namespace ProjectPalaceOfZeus
 
         private void lblPancakes_Click(object sender, EventArgs e)
         {
-            Label label8 = (Label)sender;
-            string itemName = label8.Text;
+            selectedItems.Add(lblPancakes.Text);
+            selectedItemPrices.Add(8.00);
+            totalCost += 8.00;
+            lblTotal.Visible = true;
+            lblTotal.Text = "Total Price:" + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
+
+           // Label label8 = (Label)sender;
+          //  string itemName = label8.Text;
            // decimal itemPrice = GetPriceFromLabel(label8);
         }
+
 
         //private decimal GetPriceFromLabel(Label label)
         //{
