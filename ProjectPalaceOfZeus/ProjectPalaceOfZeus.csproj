@@ -394,5 +394,23 @@
   <ItemGroup>
     <None Include="Resources\pausebutton!.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trhorse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trhorse2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youarehere.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hereyouare.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

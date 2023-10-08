@@ -12,6 +12,7 @@ namespace ProjectPalaceOfZeus
 {
     public partial class CampingArea : Form
     {
+        private bool isclickable = true;
         private readonly Rectangle clickableArea = new Rectangle(500, 300, 100, 150);
         public CampingArea()
         {
@@ -20,7 +21,7 @@ namespace ProjectPalaceOfZeus
 
         private void CampingArea_MouseMove(object sender, MouseEventArgs e)
         {
-            if (clickableArea.Contains(e.Location))
+            if (isclickable && clickableArea.Contains(e.Location))
             {
                 this.Cursor = Cursors.Hand; // Αλλαγή του δρομέα σε "Hand" όταν βρίσκεται πάνω από την περιοχή
             }
@@ -32,13 +33,35 @@ namespace ProjectPalaceOfZeus
 
         private void CampingArea_MouseClick(object sender, MouseEventArgs e)
         {
-            if (clickableArea.Contains(e.Location))
+            if (isclickable && clickableArea.Contains(e.Location))
             {
-                MessageBox.Show("Είσοδος στο Δούρειο Ίππο");
-                TrojanHorse trojanHorse = new TrojanHorse(3,4);
-                trojanHorse.Show();
-                this.Hide();
+                DialogResult result = MessageBox.Show("Θέλετε να ανέβετε στο Δούρειο Ίππο;", "Ενημέρωση", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    TrojanHorse trojanHorse = new TrojanHorse(3, 4);
+                    trojanHorse.Show();
+                    this.Hide();
+                }
             }
+        }
+
+        private void ToHotelpictureBox_Click(object sender, EventArgs e)
+        {
+            Room form = new Room();
+            form.Show();
+            this.Hide();
+        }
+
+        private void LocationPictureBox_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            isclickable = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible=false;
+            isclickable = true;
         }
     }
 }

@@ -31,8 +31,8 @@ namespace ProjectPalaceOfZeus
 
         private void TrojanHorse_KeyDown(object sender, KeyEventArgs e)
         {
-            int prevRow = currentRow;
-            int prevCol = currentCol;
+            //int prevRow = currentRow;
+            //int prevCol = currentCol;
 
             switch (e.KeyCode)
             {
@@ -88,10 +88,10 @@ namespace ProjectPalaceOfZeus
             }
             e.Handled = true;
 
-            if (prevRow != currentRow || prevCol != currentCol)
-            {
+            //if (prevRow != currentRow || prevCol != currentCol)
+            //{
                 HighlightCurrentCell();
-            }
+            //}
         }
         private void HighlightCurrentCell()
         {
@@ -315,9 +315,15 @@ namespace ProjectPalaceOfZeus
                 MessageBox.Show("Πρέπει να ανοίξετε την πόρτα και να κατεβάσετε τη σκάλα για να βγείτε με ασφάλεια.", "Προσοχή!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if (openDoors == true && loweredStairs == true)
-            {
-                Destination.Show();
-                this.Close();
+            {   if (Destination == null)
+                {
+                    SetDestination(currentCol, currentRow);                   
+                    Destination.Show();
+                    this.Close();
+                }
+                else
+                    Destination.Show();
+                    this.Close(); 
             }
             else if (openDoors == true && loweredStairs != true)
             {
