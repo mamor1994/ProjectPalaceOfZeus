@@ -140,11 +140,38 @@ namespace ProjectPalaceOfZeus
             selectedItemPrices.Add(8.00);
             totalCost += 8.00;
             lblTotal.Visible = true;
-            lblTotal.Text = "Total Price:" + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
+            lblTotal.Text = "Total Price:  " + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
 
            // Label label8 = (Label)sender;
           //  string itemName = label8.Text;
            // decimal itemPrice = GetPriceFromLabel(label8);
+        }
+
+        private void lblToast_Click(object sender, EventArgs e)
+        {
+            selectedItems.Add(lblToast.Text);
+            selectedItemPrices.Add(4.00);
+            totalCost += 4.00;
+            lblTotal.Visible = true;
+            lblTotal.Text = "Total Price:  " + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
+        }
+
+        private void lblCM_Click(object sender, EventArgs e)
+        {
+            selectedItems.Add(lblCM.Text);
+            selectedItemPrices.Add(8.00);
+            totalCost += 8.00;
+            lblTotal.Visible = true;
+            lblTotal.Text = "Total Price:  " + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
+        }
+
+        private void lblCroissant_Click(object sender, EventArgs e)
+        {
+            selectedItems.Add(lblCroissant.Text);
+            selectedItemPrices.Add(4.00);
+            totalCost += 4.00;
+            lblTotal.Visible = true;
+            lblTotal.Text = "Total Price:  " + totalCost.ToString("C", CultureInfo.CreateSpecificCulture("el-GR"));
         }
 
 
