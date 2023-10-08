@@ -451,5 +451,29 @@
   <ItemGroup>
     <None Include="Resources\food.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pota.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\drinks.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pota1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pancakes.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\toast.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\eggs.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\krouasan.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\back.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

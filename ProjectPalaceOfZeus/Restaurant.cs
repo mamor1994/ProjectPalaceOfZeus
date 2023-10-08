@@ -13,6 +13,9 @@ namespace ProjectPalaceOfZeus
 {
     public partial class Restaurant : Form
     {
+        private List<string> selectedItems = new List<string>(); 
+        private List<decimal> selectedItemPrices = new List<decimal>(); 
+        private decimal totalCost = 0;
         public Restaurant()
         {
             InitializeComponent();
@@ -79,5 +82,87 @@ namespace ProjectPalaceOfZeus
             pictureBox3.Visible = false;
             pictureBox2.Visible = false;
         }
+
+        private void lblBrunch_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = false;
+            brunchMenu.Visible = true;
+            label3.Text = "Brunch";
+            lblTotal.Visible = true;
+        }
+
+        private void lblFood_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = false;
+           
+        }
+
+        private void lblCoffee_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = false;
+
+        }
+
+        private void lblDrinks_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Visible = false;
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            button3.Visible = false;
+            label1.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (label3.Text == "Περιεχόμενο")
+            {
+                panel1.Visible = false;
+            }
+            else if(label3.Text == "Brunch")
+            {
+                brunchMenu.Visible = false;
+                tableLayoutPanel2.Visible = true;
+                label3.Text = "Περιεχόμενο";
+                lblTotal.Visible = false;
+            }
+        }
+
+        private void lblPancakes_Click(object sender, EventArgs e)
+        {
+            Label label8 = (Label)sender;
+            string itemName = label8.Text;
+           // decimal itemPrice = GetPriceFromLabel(label8);
+        }
+
+        //private decimal GetPriceFromLabel(Label label)
+        //{
+        //    string priceText = label.Text.Replace("$", "");
+        //    return decimal.Parse(priceText);
+        //}
+
+        //private void AddItem(string item, decimal price)
+        //{
+
+        //    selectedItems.Add(item);
+        //    selectedItemPrices.Add(price);
+        //    totalCost += price;
+        //    UpdateOrderDisplay();
+        //}
+
+        //private void UpdateOrderDisplay()
+        //{
+        //    orderListBox.Items.Clear();
+        //    foreach (string item in selectedItems)
+        //    {
+        //        orderListBox.Items.Add(item);
+        //    }
+        //    lblTotal.Text = $"Συνολικό Κόστος: {totalCost:C}";
+        //}
     }
 }
