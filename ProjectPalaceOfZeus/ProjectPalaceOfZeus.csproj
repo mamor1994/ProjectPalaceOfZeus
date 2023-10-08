@@ -74,6 +74,12 @@
     <Compile Include="ForestArea.Designer.cs">
       <DependentUpon>ForestArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </Compile>
     <Compile Include="MarketArea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +98,11 @@
     <Compile Include="ParkingArea2.Designer.cs">
       <DependentUpon>ParkingArea2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Restaurant.cs">
+    <Compile Include="MainHall.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Restaurant.Designer.cs">
-      <DependentUpon>Restaurant.cs</DependentUpon>
+    <Compile Include="MainHall.Designer.cs">
+      <DependentUpon>MainHall.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -135,6 +141,9 @@
     <EmbeddedResource Include="ForestArea.resx">
       <DependentUpon>ForestArea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant.resx">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MarketArea.resx">
       <DependentUpon>MarketArea.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,8 +153,8 @@
     <EmbeddedResource Include="ParkingArea2.resx">
       <DependentUpon>ParkingArea2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Restaurant.resx">
-      <DependentUpon>Restaurant.cs</DependentUpon>
+    <EmbeddedResource Include="MainHall.resx">
+      <DependentUpon>MainHall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Room.resx">
       <DependentUpon>Room.cs</DependentUpon>
@@ -414,6 +423,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\313927093_482418940388558_6281749347256663031_n copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\restaurant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cloud2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\barcode.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
