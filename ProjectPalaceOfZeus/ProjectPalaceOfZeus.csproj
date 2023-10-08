@@ -475,5 +475,44 @@
   <ItemGroup>
     <None Include="images\back.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kotopoylo.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pastitsio.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gemista.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\karmponara.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\fc %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\freddo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sokolata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\xumos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\aperol.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kahlua.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maitai.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\κρασι.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\receipt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
