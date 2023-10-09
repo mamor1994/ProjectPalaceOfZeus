@@ -19,7 +19,8 @@ namespace ProjectPalaceOfZeus
     public partial class Restaurant : Form
     {
         private List<string> selectedItems = new List<string>(); 
-        private List<double> selectedItemPrices = new List<double>(); 
+        private List<double> selectedItemPrices = new List<double>();
+
         private double totalCost = 0;
         private int i;
 
@@ -444,7 +445,6 @@ namespace ProjectPalaceOfZeus
 
             foreach (string item in selectedItems)
             {
-                
                 ΑΠΟΔΕΙΞΗ.Items.Add($"{item} - {selectedItemPrices[i]:C}");
                 AdjustListBoxHeight();
                 i++;

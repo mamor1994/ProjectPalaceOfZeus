@@ -77,6 +77,12 @@
     <Compile Include="ForestArea.Designer.cs">
       <DependentUpon>ForestArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnLineHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnLineHelp.Designer.cs">
+      <DependentUpon>OnLineHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restaurant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForestArea.resx">
       <DependentUpon>ForestArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnLineHelp.resx">
+      <DependentUpon>OnLineHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restaurant.resx">
       <DependentUpon>Restaurant.cs</DependentUpon>

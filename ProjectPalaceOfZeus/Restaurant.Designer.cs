@@ -246,7 +246,7 @@
             this.brunchMenu.ColumnCount = 3;
             this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.47643F));
             this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.52357F));
-            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
+            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.brunchMenu.Controls.Add(this.lblPrice4, 2, 3);
             this.brunchMenu.Controls.Add(this.lblPrice3, 2, 2);
             this.brunchMenu.Controls.Add(this.lblPrice2, 2, 1);
@@ -259,14 +259,13 @@
             this.brunchMenu.Controls.Add(this.lblOption1, 1, 0);
             this.brunchMenu.Controls.Add(this.lblOption4, 1, 3);
             this.brunchMenu.Controls.Add(this.lblPrice1, 2, 0);
-            this.brunchMenu.Location = new System.Drawing.Point(182, 70);
+            this.brunchMenu.Location = new System.Drawing.Point(191, 73);
             this.brunchMenu.Name = "brunchMenu";
-            this.brunchMenu.RowCount = 5;
+            this.brunchMenu.RowCount = 4;
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.brunchMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.brunchMenu.Size = new System.Drawing.Size(542, 405);
             this.brunchMenu.TabIndex = 10;
             this.brunchMenu.Visible = false;
@@ -276,9 +275,9 @@
             this.lblPrice4.AutoSize = true;
             this.lblPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice4.Location = new System.Drawing.Point(385, 288);
+            this.lblPrice4.Location = new System.Drawing.Point(384, 303);
             this.lblPrice4.Name = "lblPrice4";
-            this.lblPrice4.Size = new System.Drawing.Size(154, 96);
+            this.lblPrice4.Size = new System.Drawing.Size(155, 102);
             this.lblPrice4.TabIndex = 13;
             this.lblPrice4.Text = "4.00€";
             this.lblPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -288,9 +287,9 @@
             this.lblPrice3.AutoSize = true;
             this.lblPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice3.Location = new System.Drawing.Point(385, 192);
+            this.lblPrice3.Location = new System.Drawing.Point(384, 202);
             this.lblPrice3.Name = "lblPrice3";
-            this.lblPrice3.Size = new System.Drawing.Size(154, 96);
+            this.lblPrice3.Size = new System.Drawing.Size(155, 101);
             this.lblPrice3.TabIndex = 12;
             this.lblPrice3.Text = "8.00€";
             this.lblPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -300,9 +299,9 @@
             this.lblPrice2.AutoSize = true;
             this.lblPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice2.Location = new System.Drawing.Point(385, 96);
+            this.lblPrice2.Location = new System.Drawing.Point(384, 101);
             this.lblPrice2.Name = "lblPrice2";
-            this.lblPrice2.Size = new System.Drawing.Size(154, 96);
+            this.lblPrice2.Size = new System.Drawing.Size(155, 101);
             this.lblPrice2.TabIndex = 11;
             this.lblPrice2.Text = "4.00€";
             this.lblPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,9 +310,9 @@
             // 
             this.pc4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pc4.Image = global::ProjectPalaceOfZeus.Properties.Resources.krouasan;
-            this.pc4.Location = new System.Drawing.Point(3, 291);
+            this.pc4.Location = new System.Drawing.Point(3, 306);
             this.pc4.Name = "pc4";
-            this.pc4.Size = new System.Drawing.Size(133, 90);
+            this.pc4.Size = new System.Drawing.Size(133, 96);
             this.pc4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pc4.TabIndex = 8;
             this.pc4.TabStop = false;
@@ -324,9 +323,9 @@
             this.lblOption3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblOption3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblOption3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblOption3.Location = new System.Drawing.Point(142, 192);
+            this.lblOption3.Location = new System.Drawing.Point(142, 202);
             this.lblOption3.Name = "lblOption3";
-            this.lblOption3.Size = new System.Drawing.Size(237, 96);
+            this.lblOption3.Size = new System.Drawing.Size(236, 101);
             this.lblOption3.TabIndex = 7;
             this.lblOption3.Text = "Croque Monsieur";
             this.lblOption3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -336,9 +335,9 @@
             // 
             this.pc3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pc3.Image = global::ProjectPalaceOfZeus.Properties.Resources.eggs;
-            this.pc3.Location = new System.Drawing.Point(3, 195);
+            this.pc3.Location = new System.Drawing.Point(3, 205);
             this.pc3.Name = "pc3";
-            this.pc3.Size = new System.Drawing.Size(133, 90);
+            this.pc3.Size = new System.Drawing.Size(133, 95);
             this.pc3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pc3.TabIndex = 6;
             this.pc3.TabStop = false;
@@ -349,9 +348,9 @@
             this.lblOption2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblOption2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblOption2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lblOption2.Location = new System.Drawing.Point(142, 96);
+            this.lblOption2.Location = new System.Drawing.Point(142, 101);
             this.lblOption2.Name = "lblOption2";
-            this.lblOption2.Size = new System.Drawing.Size(237, 96);
+            this.lblOption2.Size = new System.Drawing.Size(236, 101);
             this.lblOption2.TabIndex = 5;
             this.lblOption2.Text = "Toast";
             this.lblOption2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -361,9 +360,9 @@
             // 
             this.pc2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pc2.Image = global::ProjectPalaceOfZeus.Properties.Resources.toast;
-            this.pc2.Location = new System.Drawing.Point(3, 99);
+            this.pc2.Location = new System.Drawing.Point(3, 104);
             this.pc2.Name = "pc2";
-            this.pc2.Size = new System.Drawing.Size(133, 90);
+            this.pc2.Size = new System.Drawing.Size(133, 95);
             this.pc2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pc2.TabIndex = 4;
             this.pc2.TabStop = false;
@@ -374,7 +373,7 @@
             this.pc1.Image = global::ProjectPalaceOfZeus.Properties.Resources.κρασι;
             this.pc1.Location = new System.Drawing.Point(3, 3);
             this.pc1.Name = "pc1";
-            this.pc1.Size = new System.Drawing.Size(133, 90);
+            this.pc1.Size = new System.Drawing.Size(133, 95);
             this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pc1.TabIndex = 2;
             this.pc1.TabStop = false;
@@ -387,7 +386,7 @@
             this.lblOption1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.lblOption1.Location = new System.Drawing.Point(142, 0);
             this.lblOption1.Name = "lblOption1";
-            this.lblOption1.Size = new System.Drawing.Size(237, 96);
+            this.lblOption1.Size = new System.Drawing.Size(236, 101);
             this.lblOption1.TabIndex = 3;
             this.lblOption1.Text = "Pancakes";
             this.lblOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -399,9 +398,9 @@
             this.lblOption4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblOption4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblOption4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblOption4.Location = new System.Drawing.Point(142, 288);
+            this.lblOption4.Location = new System.Drawing.Point(142, 303);
             this.lblOption4.Name = "lblOption4";
-            this.lblOption4.Size = new System.Drawing.Size(237, 96);
+            this.lblOption4.Size = new System.Drawing.Size(236, 102);
             this.lblOption4.TabIndex = 9;
             this.lblOption4.Text = "Croissant";
             this.lblOption4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -412,9 +411,9 @@
             this.lblPrice1.AutoSize = true;
             this.lblPrice1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice1.Location = new System.Drawing.Point(385, 0);
+            this.lblPrice1.Location = new System.Drawing.Point(384, 0);
             this.lblPrice1.Name = "lblPrice1";
-            this.lblPrice1.Size = new System.Drawing.Size(154, 96);
+            this.lblPrice1.Size = new System.Drawing.Size(155, 101);
             this.lblPrice1.TabIndex = 10;
             this.lblPrice1.Text = "8.00€";
             this.lblPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -590,9 +589,9 @@
             this.ΑΠΟΔΕΙΞΗ.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ΑΠΟΔΕΙΞΗ.FormattingEnabled = true;
             this.ΑΠΟΔΕΙΞΗ.ItemHeight = 16;
-            this.ΑΠΟΔΕΙΞΗ.Location = new System.Drawing.Point(304, 160);
+            this.ΑΠΟΔΕΙΞΗ.Location = new System.Drawing.Point(239, 160);
             this.ΑΠΟΔΕΙΞΗ.Name = "ΑΠΟΔΕΙΞΗ";
-            this.ΑΠΟΔΕΙΞΗ.Size = new System.Drawing.Size(182, 324);
+            this.ΑΠΟΔΕΙΞΗ.Size = new System.Drawing.Size(240, 324);
             this.ΑΠΟΔΕΙΞΗ.TabIndex = 15;
             this.ΑΠΟΔΕΙΞΗ.Visible = false;
             this.ΑΠΟΔΕΙΞΗ.Click += new System.EventHandler(this.ΑΠΟΔΕΙΞΗ_Click);
