@@ -38,11 +38,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.goCamping = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.goRestaurant = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goPool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goRoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goCamping)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goRestaurant)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -119,7 +122,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Segoe Script", 10.2F);
-            this.label3.Location = new System.Drawing.Point(7, 183);
+            this.label3.Location = new System.Drawing.Point(12, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 27);
             this.label3.TabIndex = 22;
@@ -129,7 +132,7 @@
             // 
             this.goCamping.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goCamping.Image = global::ProjectPalaceOfZeus.Properties.Resources.go1;
-            this.goCamping.Location = new System.Drawing.Point(12, 236);
+            this.goCamping.Location = new System.Drawing.Point(12, 65);
             this.goCamping.Name = "goCamping";
             this.goCamping.Size = new System.Drawing.Size(100, 69);
             this.goCamping.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,6 +151,29 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "label4";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.Font = new System.Drawing.Font("Segoe Script", 10.2F);
+            this.label5.Location = new System.Drawing.Point(12, 357);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(213, 27);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Πήγαινε σε Εστιατόριο";
+            // 
+            // goRestaurant
+            // 
+            this.goRestaurant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goRestaurant.Image = global::ProjectPalaceOfZeus.Properties.Resources.go1;
+            this.goRestaurant.Location = new System.Drawing.Point(12, 407);
+            this.goRestaurant.Name = "goRestaurant";
+            this.goRestaurant.Size = new System.Drawing.Size(100, 69);
+            this.goRestaurant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.goRestaurant.TabIndex = 28;
+            this.goRestaurant.TabStop = false;
+            this.goRestaurant.Click += new System.EventHandler(this.goRestaurant_Click);
+            // 
             // MainHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,6 +182,8 @@
             this.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.Restaurant;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(885, 506);
+            this.Controls.Add(this.goRestaurant);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.goCamping);
             this.Controls.Add(this.label3);
@@ -176,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.goPool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goRoom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goCamping)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goRestaurant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +220,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox goCamping;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox goRestaurant;
     }
 }
