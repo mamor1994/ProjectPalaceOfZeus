@@ -120,7 +120,7 @@ namespace ProjectPalaceOfZeus
             }
             else if (col == 1 && row == 0)
             {
-                Destination = new Room();
+                Destination = new MainHall();
             }
             else if (col == 2 && row == 0)
             {

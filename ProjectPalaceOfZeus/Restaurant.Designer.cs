@@ -70,6 +70,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.ΑΠΟΔΕΙΞΗ = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ToHotelpictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -241,7 +244,7 @@
             this.brunchMenu.ColumnCount = 3;
             this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.47643F));
             this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.52357F));
-            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.brunchMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.brunchMenu.Controls.Add(this.lblPrice4, 2, 3);
             this.brunchMenu.Controls.Add(this.lblPrice3, 2, 2);
             this.brunchMenu.Controls.Add(this.lblPrice2, 2, 1);
@@ -271,9 +274,9 @@
             this.lblPrice4.AutoSize = true;
             this.lblPrice4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice4.Location = new System.Drawing.Point(388, 288);
+            this.lblPrice4.Location = new System.Drawing.Point(387, 288);
             this.lblPrice4.Name = "lblPrice4";
-            this.lblPrice4.Size = new System.Drawing.Size(151, 96);
+            this.lblPrice4.Size = new System.Drawing.Size(152, 96);
             this.lblPrice4.TabIndex = 13;
             this.lblPrice4.Text = "4.00€";
             this.lblPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -283,9 +286,9 @@
             this.lblPrice3.AutoSize = true;
             this.lblPrice3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice3.Location = new System.Drawing.Point(388, 192);
+            this.lblPrice3.Location = new System.Drawing.Point(387, 192);
             this.lblPrice3.Name = "lblPrice3";
-            this.lblPrice3.Size = new System.Drawing.Size(151, 96);
+            this.lblPrice3.Size = new System.Drawing.Size(152, 96);
             this.lblPrice3.TabIndex = 12;
             this.lblPrice3.Text = "8.00€";
             this.lblPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,9 +298,9 @@
             this.lblPrice2.AutoSize = true;
             this.lblPrice2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice2.Location = new System.Drawing.Point(388, 96);
+            this.lblPrice2.Location = new System.Drawing.Point(387, 96);
             this.lblPrice2.Name = "lblPrice2";
-            this.lblPrice2.Size = new System.Drawing.Size(151, 96);
+            this.lblPrice2.Size = new System.Drawing.Size(152, 96);
             this.lblPrice2.TabIndex = 11;
             this.lblPrice2.Text = "4.00€";
             this.lblPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,7 +324,7 @@
             this.lblOption3.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.lblOption3.Location = new System.Drawing.Point(143, 192);
             this.lblOption3.Name = "lblOption3";
-            this.lblOption3.Size = new System.Drawing.Size(239, 96);
+            this.lblOption3.Size = new System.Drawing.Size(238, 96);
             this.lblOption3.TabIndex = 7;
             this.lblOption3.Text = "Croque Monsieur";
             this.lblOption3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -346,7 +349,7 @@
             this.lblOption2.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.lblOption2.Location = new System.Drawing.Point(143, 96);
             this.lblOption2.Name = "lblOption2";
-            this.lblOption2.Size = new System.Drawing.Size(239, 96);
+            this.lblOption2.Size = new System.Drawing.Size(238, 96);
             this.lblOption2.TabIndex = 5;
             this.lblOption2.Text = "Toast";
             this.lblOption2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -382,7 +385,7 @@
             this.lblOption1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.lblOption1.Location = new System.Drawing.Point(143, 0);
             this.lblOption1.Name = "lblOption1";
-            this.lblOption1.Size = new System.Drawing.Size(239, 96);
+            this.lblOption1.Size = new System.Drawing.Size(238, 96);
             this.lblOption1.TabIndex = 3;
             this.lblOption1.Text = "Pancakes";
             this.lblOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,7 +399,7 @@
             this.lblOption4.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
             this.lblOption4.Location = new System.Drawing.Point(143, 288);
             this.lblOption4.Name = "lblOption4";
-            this.lblOption4.Size = new System.Drawing.Size(239, 96);
+            this.lblOption4.Size = new System.Drawing.Size(238, 96);
             this.lblOption4.TabIndex = 9;
             this.lblOption4.Text = "Croissant";
             this.lblOption4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -407,9 +410,9 @@
             this.lblPrice1.AutoSize = true;
             this.lblPrice1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPrice1.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold);
-            this.lblPrice1.Location = new System.Drawing.Point(388, 0);
+            this.lblPrice1.Location = new System.Drawing.Point(387, 0);
             this.lblPrice1.Name = "lblPrice1";
-            this.lblPrice1.Size = new System.Drawing.Size(151, 96);
+            this.lblPrice1.Size = new System.Drawing.Size(152, 96);
             this.lblPrice1.TabIndex = 10;
             this.lblPrice1.Text = "8.00€";
             this.lblPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -592,13 +595,37 @@
             this.ΑΠΟΔΕΙΞΗ.Visible = false;
             this.ΑΠΟΔΕΙΞΗ.Click += new System.EventHandler(this.ΑΠΟΔΕΙΞΗ_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label4.Location = new System.Drawing.Point(691, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(219, 23);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Επιστροφή στο Ξενοδοχείο";
+            // 
+            // ToHotelpictureBox
+            // 
+            this.ToHotelpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.goback;
+            this.ToHotelpictureBox.Location = new System.Drawing.Point(828, 40);
+            this.ToHotelpictureBox.Name = "ToHotelpictureBox";
+            this.ToHotelpictureBox.Size = new System.Drawing.Size(100, 69);
+            this.ToHotelpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToHotelpictureBox.TabIndex = 23;
+            this.ToHotelpictureBox.TabStop = false;
+            this.ToHotelpictureBox.Click += new System.EventHandler(this.ToHotelpictureBox_Click);
+            // 
             // Restaurant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.restaurant1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(905, 637);
+            this.ClientSize = new System.Drawing.Size(938, 637);
+            this.Controls.Add(this.ToHotelpictureBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.ΑΠΟΔΕΙΞΗ);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
@@ -636,6 +663,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -683,5 +711,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.ListBox ΑΠΟΔΕΙΞΗ;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox ToHotelpictureBox;
     }
 }

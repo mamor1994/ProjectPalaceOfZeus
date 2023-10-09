@@ -29,34 +29,33 @@ namespace ProjectPalaceOfZeus
             {
                 alarmActivated = false;
                 lblMessage1.Show(); 
+                lblMessage1.Visible = true;
                 lblMessage1.Text = "Ο συναγερμός είναι απενεργοποιημένος!";
                 timer1.Start();
-                //MessageBox.Show("Ο συναγερμός είναι απενεργοποιημένος!", "Απενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 alarmActivated = true;
                 lblMessage1.Show();
+                lblMessage1.Visible = true;
                 lblMessage1.Text = "Ο συναγερμός είναι ενεργοποιημένος!";
                 timer1.Start();
-                //MessageBox.Show("Ο συναγερμός είναι ενεργοποιημένος!", "Ενεργοποίηση Συναγερμού", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
         }
 
         private void btnToggleWaterSupply_Click(object sender, EventArgs e)
         {
-            if (waterSupplyOn)
+            timer1.Stop();
+            if (waterSupplyOn == true)
             {
                 waterSupplyOn = false;
-                //MessageBox.Show("Η παροχή Νερού είναι απενεργοποιημένη!", "Απενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pictureBox2.Image = Properties.Resources.empty;
+                pictureBox2.Image = Properties.Resources.withWater;
             }
             else
             {
                 waterSupplyOn = true;
-                //MessageBox.Show("Η παροχή Νερού είναι ενεργοποιημένη!", "Ενεργοποίηση Παροχή Νερού", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pictureBox2.Image = Properties.Resources.withWater;
+                pictureBox2.Image = Properties.Resources.empty;
 
             }
         }
@@ -64,6 +63,7 @@ namespace ProjectPalaceOfZeus
         private void trackBarTemperature_Scroll(object sender, EventArgs e)
         {
             lblTemperature.Text = "Temperature: " + trackBarTemperature.Value.ToString() + "°C";
+            lblMessage1.Visible = false;
         }
 
         private void Pool_FormClosing(object sender, FormClosingEventArgs e)
@@ -76,21 +76,24 @@ namespace ProjectPalaceOfZeus
 
         private void Pool_Load(object sender, EventArgs e)
         {
-            lblMessage.Hide();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblMessage1.Hide();
+            lblMessage1.Visible = false;
         }
 
         private void ToTRHorsePictureBox_Click(object sender, EventArgs e)
         {
+            timer1.Stop();
+
             if (isAreaVisible)
             {
                 isAreaVisible = false;
-                if (waterSupplyOn == false)
+                if (waterSupplyOn == true)
                 {
+                    lblMessage1.Visible = false;
                     BackgroundImage = Properties.Resources.empty;
                     btnToggleAlarm.Visible = false;
                     btnTogglePool.Visible = false;
@@ -102,9 +105,9 @@ namespace ProjectPalaceOfZeus
                     BackgroundImageLayout = ImageLayout.Stretch;
                     label2.Text = "Επιστροφή σε έλεγχο" + Environment.NewLine + "της Πισίνας";
                 }
-                else if (waterSupplyOn == true)
+                else
                 {
-
+                    lblMessage1.Visible = false;
                     BackgroundImage = Properties.Resources.withWater;
                     btnToggleAlarm.Visible = false;
                     btnTogglePool.Visible = false;
@@ -120,8 +123,10 @@ namespace ProjectPalaceOfZeus
             else
             {
                 isAreaVisible = true;
-                if (waterSupplyOn == false)
+                if (waterSupplyOn == true)
                 {
+                    lblMessage1.Text = "";
+                    lblMessage1.Visible = false;
                     btnToggleAlarm.Visible = true;
                     btnTogglePool.Visible = true;
                     trackBarTemperature.Visible = true;
@@ -131,8 +136,10 @@ namespace ProjectPalaceOfZeus
                     pictureBox1.Visible = true;
                     label2.Text = "Επιστροφή σε Πισίνα";
                 }
-                else if (waterSupplyOn == true)
+                else
                 {
+                    lblMessage1.Text = "";
+                    lblMessage1.Visible = false;
                     btnToggleAlarm.Visible = true;
                     btnTogglePool.Visible = true;
                     trackBarTemperature.Visible = true;

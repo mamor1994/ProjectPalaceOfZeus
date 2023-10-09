@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
@@ -180,22 +181,34 @@ namespace ProjectPalaceOfZeus
 
         private void lblDrinks_Click(object sender, EventArgs e)
         {
-            label3.Text = "Ποτά";
-            lblTotal.Visible = true;
-            tableLayoutPanel2.Visible = false;
-            brunchMenu.Visible = true;
-            lblOption1.Text = "Aperol";
-            lblOption2.Text = "Kahlua";
-            lblOption3.Text = "Mai Tai";
-            lblOption4.Text = "Κρασί";
-            pc1.Image = Properties.Resources.aperol;
-            pc2.Image = Properties.Resources.kahlua;
-            pc3.Image = Properties.Resources.maitai;
-            pc4.Image = Properties.Resources.κρασι;
-            lblPrice1.Text = "15.00€";
-            lblPrice2.Text = "13.00€";
-            lblPrice3.Text = "12.00€";
-            lblPrice4.Text = "15.00€";
+            lblDrinks.Click += lblDrinks_Click;
+            DateTime currentTime = DateTime.Now;
+            if (currentTime.Hour >= 18 || currentTime.Hour < 5)
+            {
+                label3.Text = "Ποτά";
+                lblTotal.Visible = true;
+                tableLayoutPanel2.Visible = false;
+                brunchMenu.Visible = true;
+                lblOption1.Text = "Aperol";
+                lblOption2.Text = "Kahlua";
+                lblOption3.Text = "Mai Tai";
+                lblOption4.Text = "Κρασί";
+                pc1.Image = Properties.Resources.aperol;
+                pc2.Image = Properties.Resources.kahlua;
+                pc3.Image = Properties.Resources.maitai;
+                pc4.Image = Properties.Resources.κρασι;
+                lblPrice1.Text = "15.00€";
+                lblPrice2.Text = "13.00€";
+                lblPrice3.Text = "12.00€";
+                lblPrice4.Text = "15.00€";
+            }
+            else if (currentTime.Hour >= 5 || currentTime.Hour < 17)
+            {
+                lblDrinks.Click -= lblDrinks_Click;
+                pictureBox1.Cursor = Cursors.Default;
+                MessageBox.Show("Λυπάμαι, αλλά δεν μπορείτε να αγοράσετε ποτά το πρωί.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -442,6 +455,13 @@ namespace ProjectPalaceOfZeus
             ΑΠΟΔΕΙΞΗ.Items.Clear();
             i = 0;
             lblTotal.Text = "Total Price: ";
+        }
+
+        private void ToHotelpictureBox_Click(object sender, EventArgs e)
+        {
+            Form form = new MainHall();
+            form.Show();
+            this.Hide();
         }
     }
 }
