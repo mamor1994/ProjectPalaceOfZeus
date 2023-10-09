@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace ProjectPalaceOfZeus
 {
@@ -64,6 +65,8 @@ namespace ProjectPalaceOfZeus
                 button2.Visible = false;
                 pictureBox2.Visible = false;
                 label1.Text = "Σας ευχαριστώ!" + Environment.NewLine + "Ορίστε η απόδειξη σας";
+                pictureBox1.Click -= pictureBox1_Click;
+                pictureBox1.Cursor = Cursors.Default;
                 timer2.Start();
             }
             else
@@ -106,6 +109,8 @@ namespace ProjectPalaceOfZeus
                 button2.Visible = false;
                 pictureBox2.Visible = false;
                 label1.Text = "Σας ευχαριστώ!" + Environment.NewLine + "Ορίστε η απόδειξη σας";
+                pictureBox1.Click -= pictureBox1_Click;
+                pictureBox1.Cursor = Cursors.Default;
                 timer2.Start();
             }
             else
@@ -435,25 +440,42 @@ namespace ProjectPalaceOfZeus
             button2.Visible = false;
             ΑΠΟΔΕΙΞΗ.Visible = true;
             ΑΠΟΔΕΙΞΗ.Items.Add("Απόδειξη");
+            AdjustListBoxHeight();
 
             foreach (string item in selectedItems)
             {
                 
                 ΑΠΟΔΕΙΞΗ.Items.Add($"{item} - {selectedItemPrices[i]:C}");
+                AdjustListBoxHeight();
                 i++;
             }
             ΑΠΟΔΕΙΞΗ.Items.Add(string.Format("Σύνολο: {0:C}", totalCost));
+            //ΑΠΟΔΕΙΞΗ.Items.Add(Properties.Resources.receipt1);
+            AdjustListBoxHeight();
         }
 
         private void ΑΠΟΔΕΙΞΗ_Click(object sender, EventArgs e)
         {
             ΑΠΟΔΕΙΞΗ.Visible = false;
+            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Cursor = Cursors.Hand;
             totalCost = 0;
             selectedItems.Clear();
             selectedItemPrices.Clear();
             ΑΠΟΔΕΙΞΗ.Items.Clear();
+            AdjustListBoxHeight();
             i = 0;
             lblTotal.Text = "Total Price: ";
+        }
+
+        private void AdjustListBoxHeight()
+        {
+            int itemHeight = 20; 
+            int maxHeight = 300;
+            int totalItemHeight = ΑΠΟΔΕΙΞΗ.Items.Count * itemHeight; 
+            int listBoxHeight = Math.Min(totalItemHeight, maxHeight); 
+
+            ΑΠΟΔΕΙΞΗ.Height = listBoxHeight;
         }
 
         private void ToHotelpictureBox_Click(object sender, EventArgs e)
