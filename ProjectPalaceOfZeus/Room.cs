@@ -292,6 +292,13 @@ namespace ProjectPalaceOfZeus
             }
         }
 
+        private void ToHotelpictureBox_Click(object sender, EventArgs e)
+        {
+            Form form = new MainHall();
+            form.Show();
+            this.Hide();
+        }
+
         private void offLightsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (room_curtain == 0)

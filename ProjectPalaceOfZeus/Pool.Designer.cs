@@ -144,6 +144,8 @@
             this.lblMessage1.Size = new System.Drawing.Size(12, 18);
             this.lblMessage1.TabIndex = 11;
             this.lblMessage1.Text = "l";
+            this.lblMessage1.Visible = false;
+            this.lblMessage1.Click += new System.EventHandler(this.timer1_Tick);
             // 
             // timer1
             // 

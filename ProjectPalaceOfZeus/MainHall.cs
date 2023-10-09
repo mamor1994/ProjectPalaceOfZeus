@@ -17,6 +17,23 @@ namespace ProjectPalaceOfZeus
         public MainHall()
         {
             InitializeComponent();
+            label4.Text = GreetEmployee() + ", καλωσήρθατε" + Environment.NewLine + "στο Παλάτι του Δία";
+        }
+
+        private string GreetEmployee()
+        {
+            DateTime currentTime = DateTime.Now;
+            string greeting = "";
+
+            if (currentTime.Hour >= 6 && currentTime.Hour < 12)
+            {
+                greeting = "Καλημέρα!";
+            }
+            else if (currentTime.Hour >= 12 && currentTime.Hour < 24)
+            {
+                greeting = "Καλησπέρα!";
+            }
+            return greeting;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -25,6 +42,27 @@ namespace ProjectPalaceOfZeus
             {
                 Application.Exit();
             }
+        }
+
+        private void goRoom_Click(object sender, EventArgs e)
+        {
+            Form form = new Room();
+            form.Show();
+            this.Hide();
+        }
+
+        private void goPool_Click(object sender, EventArgs e)
+        {
+            Form form = new Pool();
+            form.Show();
+            this.Hide();
+        }
+
+        private void goCamping_Click(object sender, EventArgs e)
+        {
+            Form form = new CampingArea();
+            form.Show();
+            this.Hide();
         }
     }
 }

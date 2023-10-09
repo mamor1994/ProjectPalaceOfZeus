@@ -115,7 +115,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(701, 313);
+            this.label2.Location = new System.Drawing.Point(736, 324);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 23);
             this.label2.TabIndex = 16;
@@ -125,7 +125,6 @@
             // 
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(12, 11);
             this.panel1.Name = "panel1";
@@ -517,6 +516,7 @@
             this.ClientSize = new System.Drawing.Size(900, 646);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ToHotelpictureBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.LocationPictureBox);
             this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);

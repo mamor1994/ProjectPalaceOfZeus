@@ -42,9 +42,12 @@
             this.offCurtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ToHotelpictureBox = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -59,7 +62,7 @@
             this.curtainToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(131, 495);
+            this.menuStrip1.Size = new System.Drawing.Size(129, 495);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -167,18 +170,42 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::ProjectPalaceOfZeus.Properties.Resources.room1;
-            this.pictureBox1.Location = new System.Drawing.Point(131, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(129, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(826, 495);
+            this.pictureBox1.Size = new System.Drawing.Size(828, 495);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // ToHotelpictureBox
+            // 
+            this.ToHotelpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.goback;
+            this.ToHotelpictureBox.Location = new System.Drawing.Point(821, 414);
+            this.ToHotelpictureBox.Name = "ToHotelpictureBox";
+            this.ToHotelpictureBox.Size = new System.Drawing.Size(100, 69);
+            this.ToHotelpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToHotelpictureBox.TabIndex = 18;
+            this.ToHotelpictureBox.TabStop = false;
+            this.ToHotelpictureBox.Click += new System.EventHandler(this.ToHotelpictureBox_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label3.Location = new System.Drawing.Point(702, 372);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(219, 23);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Επιστροφή στο Ξενοδοχείο";
             // 
             // Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 495);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ToHotelpictureBox);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -192,6 +219,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +240,8 @@
         private System.Windows.Forms.ToolStripMenuItem offCurtainToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actionsToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ToHotelpictureBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 
