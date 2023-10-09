@@ -64,5 +64,12 @@ namespace ProjectPalaceOfZeus
             form.Show();
             this.Hide();
         }
+
+        private void goRestaurant_Click(object sender, EventArgs e)
+        {
+            Form form = new Restaurant();
+            form.Show();
+            this.Hide();
+        }
     }
 }
