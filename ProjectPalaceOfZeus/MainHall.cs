@@ -17,7 +17,7 @@ namespace ProjectPalaceOfZeus
         public MainHall()
         {
             InitializeComponent();
-            label4.Text = GreetEmployee() + ", καλωσήρθατε" + Environment.NewLine + "στο Παλάτι του Δία";
+            label4.Text = GreetEmployee() +"Kαλωσήρθατε" + Environment.NewLine + "στο Παλάτι του Δία";
         }
 
         private string GreetEmployee()

@@ -20,7 +20,6 @@ namespace ProjectPalaceOfZeus
         private List<string> selectedItems = new List<string>(); 
         private List<double> selectedItemPrices = new List<double>(); 
         private double totalCost = 0;
-        double price;
         private int i;
 
         public Restaurant()
