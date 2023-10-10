@@ -544,5 +544,38 @@
   <ItemGroup>
     <None Include="images\gif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mainpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\roomhelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\restauranthelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\doureioshelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mesahelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\pool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\xarthshelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\controlPool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menuhelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gpshelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\livadihelp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

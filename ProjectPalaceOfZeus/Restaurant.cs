@@ -207,10 +207,11 @@ namespace ProjectPalaceOfZeus
                 lblPrice3.Text = "12.00€";
                 lblPrice4.Text = "15.00€";
             }
-            else if (currentTime.Hour >= 5 || currentTime.Hour < 17)
+            else if (currentTime.Hour >= 5 || currentTime.Hour < 18)
             {
                 lblDrinks.Click -= lblDrinks_Click;
                 pictureBox1.Cursor = Cursors.Default;
+                lblDrinks.Enabled = false;    
                 MessageBox.Show("Λυπάμαι, αλλά δεν μπορείτε να αγοράσετε ποτά το πρωί.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }

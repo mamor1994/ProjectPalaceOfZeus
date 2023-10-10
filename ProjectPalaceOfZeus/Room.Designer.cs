@@ -32,22 +32,22 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.actionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onLightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.offLightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onTvToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.offTvToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.curtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.onCurtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.offCurtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ToHotelpictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ToHotelpictureBox = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.onLightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.offLightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.onTvToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.offTvToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.onCurtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.offCurtainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -62,7 +62,7 @@
             this.curtainToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(129, 495);
+            this.menuStrip1.Size = new System.Drawing.Size(131, 495);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,6 +87,70 @@
             this.lightsToolStripMenuItem.Size = new System.Drawing.Size(116, 33);
             this.lightsToolStripMenuItem.Text = "&Lights";
             // 
+            // tVToolStripMenuItem
+            // 
+            this.tVToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.onTvToolStripMenuItem1,
+            this.offTvToolStripMenuItem1});
+            this.tVToolStripMenuItem.Font = new System.Drawing.Font("Segoe Script", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.tVToolStripMenuItem.Name = "tVToolStripMenuItem";
+            this.tVToolStripMenuItem.Size = new System.Drawing.Size(116, 33);
+            this.tVToolStripMenuItem.Text = "&TV";
+            // 
+            // curtainToolStripMenuItem
+            // 
+            this.curtainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.onCurtainToolStripMenuItem,
+            this.offCurtainToolStripMenuItem});
+            this.curtainToolStripMenuItem.Font = new System.Drawing.Font("Segoe Script", 10.8F);
+            this.curtainToolStripMenuItem.Name = "curtainToolStripMenuItem";
+            this.curtainToolStripMenuItem.Size = new System.Drawing.Size(116, 33);
+            this.curtainToolStripMenuItem.Text = "&Curtain";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label3.Location = new System.Drawing.Point(702, 372);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(219, 23);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Επιστροφή στο Ξενοδοχείο";
+            // 
+            // ToHotelpictureBox
+            // 
+            this.ToHotelpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.goback;
+            this.ToHotelpictureBox.Location = new System.Drawing.Point(821, 414);
+            this.ToHotelpictureBox.Name = "ToHotelpictureBox";
+            this.ToHotelpictureBox.Size = new System.Drawing.Size(100, 69);
+            this.ToHotelpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToHotelpictureBox.TabIndex = 18;
+            this.ToHotelpictureBox.TabStop = false;
+            this.ToHotelpictureBox.Click += new System.EventHandler(this.ToHotelpictureBox_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Tan;
+            this.pictureBox2.Image = global::ProjectPalaceOfZeus.Properties.Resources.episkepths;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 190);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(129, 305);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ProjectPalaceOfZeus.Properties.Resources.room1;
+            this.pictureBox1.Location = new System.Drawing.Point(131, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(826, 495);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // onLightsToolStripMenuItem
             // 
             this.onLightsToolStripMenuItem.Image = global::ProjectPalaceOfZeus.Properties.Resources.icon_on;
@@ -102,16 +166,6 @@
             this.offLightsToolStripMenuItem.Size = new System.Drawing.Size(128, 34);
             this.offLightsToolStripMenuItem.Text = "&Off";
             this.offLightsToolStripMenuItem.Click += new System.EventHandler(this.offLightsToolStripMenuItem_Click);
-            // 
-            // tVToolStripMenuItem
-            // 
-            this.tVToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.onTvToolStripMenuItem1,
-            this.offTvToolStripMenuItem1});
-            this.tVToolStripMenuItem.Font = new System.Drawing.Font("Segoe Script", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tVToolStripMenuItem.Name = "tVToolStripMenuItem";
-            this.tVToolStripMenuItem.Size = new System.Drawing.Size(116, 33);
-            this.tVToolStripMenuItem.Text = "&TV";
             // 
             // onTvToolStripMenuItem1
             // 
@@ -129,16 +183,6 @@
             this.offTvToolStripMenuItem1.Text = "&Off";
             this.offTvToolStripMenuItem1.Click += new System.EventHandler(this.offTvToolStripMenuItem_Click);
             // 
-            // curtainToolStripMenuItem
-            // 
-            this.curtainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.onCurtainToolStripMenuItem,
-            this.offCurtainToolStripMenuItem});
-            this.curtainToolStripMenuItem.Font = new System.Drawing.Font("Segoe Script", 10.8F);
-            this.curtainToolStripMenuItem.Name = "curtainToolStripMenuItem";
-            this.curtainToolStripMenuItem.Size = new System.Drawing.Size(116, 33);
-            this.curtainToolStripMenuItem.Text = "&Curtain";
-            // 
             // onCurtainToolStripMenuItem
             // 
             this.onCurtainToolStripMenuItem.Image = global::ProjectPalaceOfZeus.Properties.Resources.curtain_off;
@@ -154,50 +198,6 @@
             this.offCurtainToolStripMenuItem.Size = new System.Drawing.Size(148, 34);
             this.offCurtainToolStripMenuItem.Text = "&Close";
             this.offCurtainToolStripMenuItem.Click += new System.EventHandler(this.offCurtainToolStripMenuItem_Click_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Tan;
-            this.pictureBox2.Image = global::ProjectPalaceOfZeus.Properties.Resources.episkepths;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 190);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(129, 305);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ProjectPalaceOfZeus.Properties.Resources.room1;
-            this.pictureBox1.Location = new System.Drawing.Point(129, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(828, 495);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ToHotelpictureBox
-            // 
-            this.ToHotelpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.goback;
-            this.ToHotelpictureBox.Location = new System.Drawing.Point(821, 414);
-            this.ToHotelpictureBox.Name = "ToHotelpictureBox";
-            this.ToHotelpictureBox.Size = new System.Drawing.Size(100, 69);
-            this.ToHotelpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ToHotelpictureBox.TabIndex = 18;
-            this.ToHotelpictureBox.TabStop = false;
-            this.ToHotelpictureBox.Click += new System.EventHandler(this.ToHotelpictureBox_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label3.Location = new System.Drawing.Point(702, 372);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 23);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Επιστροφή στο Ξενοδοχείο";
             // 
             // Room
             // 
@@ -217,9 +217,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Room_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ToHotelpictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
