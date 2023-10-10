@@ -223,6 +223,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap controlPool {
+            get {
+                object obj = ResourceManager.GetObject("controlPool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap curtain_off {
             get {
                 object obj = ResourceManager.GetObject("curtain_off", resourceCulture);
@@ -276,6 +286,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap dirbuttonup {
             get {
                 object obj = ResourceManager.GetObject("dirbuttonup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doureioshelp {
+            get {
+                object obj = ResourceManager.GetObject("doureioshelp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,6 +483,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gpshelp {
+            get {
+                object obj = ResourceManager.GetObject("gpshelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap greekmenu {
             get {
                 object obj = ResourceManager.GetObject("greekmenu", resourceCulture);
@@ -553,6 +583,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap livadihelp {
+            get {
+                object obj = ResourceManager.GetObject("livadihelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lowerstairs {
             get {
                 object obj = ResourceManager.GetObject("lowerstairs", resourceCulture);
@@ -583,6 +623,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainpage {
+            get {
+                object obj = ResourceManager.GetObject("mainpage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maitai {
             get {
                 object obj = ResourceManager.GetObject("maitai", resourceCulture);
@@ -606,6 +656,26 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap marketarea1 {
             get {
                 object obj = ResourceManager.GetObject("marketarea1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menuhelp {
+            get {
+                object obj = ResourceManager.GetObject("menuhelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mesahelp {
+            get {
+                object obj = ResourceManager.GetObject("mesahelp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -803,6 +873,16 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pool {
+            get {
+                object obj = ResourceManager.GetObject("pool", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pota {
             get {
                 object obj = ResourceManager.GetObject("pota", resourceCulture);
@@ -863,16 +943,6 @@ namespace ProjectPalaceOfZeus.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap receipt1 {
-            get {
-                object obj = ResourceManager.GetObject("receipt1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Restaurant {
             get {
                 object obj = ResourceManager.GetObject("Restaurant", resourceCulture);
@@ -886,6 +956,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap restaurant1 {
             get {
                 object obj = ResourceManager.GetObject("restaurant1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap restauranthelp {
+            get {
+                object obj = ResourceManager.GetObject("restauranthelp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -986,6 +1066,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap room1_on_tv_off_lights {
             get {
                 object obj = ResourceManager.GetObject("room1_on_tv_off_lights", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap roomhelp {
+            get {
+                object obj = ResourceManager.GetObject("roomhelp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1116,6 +1206,16 @@ namespace ProjectPalaceOfZeus.Properties {
         internal static System.Drawing.Bitmap withWater {
             get {
                 object obj = ResourceManager.GetObject("withWater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xarthshelp {
+            get {
+                object obj = ResourceManager.GetObject("xarthshelp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

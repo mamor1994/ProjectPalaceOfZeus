@@ -33,7 +33,7 @@ namespace ProjectPalaceOfZeus
             timer1.Stop();
             synthesizer.Dispose();
             this.Hide();
-            MainHall form = new MainHall();
+            OnLineHelp form = new OnLineHelp();
             form.Show();
         }
 
