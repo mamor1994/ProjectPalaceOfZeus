@@ -71,5 +71,12 @@ namespace ProjectPalaceOfZeus
             form.Show();
             this.Hide();
         }
+
+        private void ToHotelpictureBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OnLineHelp form = new OnLineHelp();
+            form.Show();
+        }
     }
 }
