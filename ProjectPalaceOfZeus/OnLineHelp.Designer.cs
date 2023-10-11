@@ -279,6 +279,7 @@
             this.Name = "OnLineHelp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnLineHelp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnLineHelp_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

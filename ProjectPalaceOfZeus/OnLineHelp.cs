@@ -12,6 +12,8 @@ namespace ProjectPalaceOfZeus
 {
     public partial class OnLineHelp : Form
     {
+        private bool needToExitApp = true;
+
         public OnLineHelp()
         {
             InitializeComponent();
@@ -67,6 +69,14 @@ namespace ProjectPalaceOfZeus
             this.Hide();
             MainHall form = new MainHall();
             form.Show();
+        }
+
+        private void OnLineHelp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (needToExitApp)
+            {
+                Application.Exit();
+            }
         }
     }
 }
