@@ -12,6 +12,7 @@ namespace ProjectPalaceOfZeus
 {
     public partial class TrojanHorse : Form
     {
+
         private bool openDoors = true;
         private bool loweredStairs = true;
         private int currentRow;

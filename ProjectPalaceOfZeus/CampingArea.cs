@@ -12,6 +12,8 @@ namespace ProjectPalaceOfZeus
 {
     public partial class CampingArea : Form
     {
+        private bool needToExitApp = true;
+
         private bool isclickable = true;
         private readonly Rectangle clickableArea = new Rectangle(500, 300, 100, 150);
         public CampingArea()
@@ -62,6 +64,14 @@ namespace ProjectPalaceOfZeus
         {
             panel1.Visible=false;
             isclickable = true;
+        }
+
+        private void CampingArea_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (needToExitApp)
+            {
+                Application.Exit();
+            }
         }
     }
 }

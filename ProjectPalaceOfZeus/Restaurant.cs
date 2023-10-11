@@ -18,6 +18,8 @@ namespace ProjectPalaceOfZeus
 {
     public partial class Restaurant : Form
     {
+        private bool needToExitApp = true;
+
         private List<string> selectedItems = new List<string>(); 
         private List<double> selectedItemPrices = new List<double>();
 
@@ -484,6 +486,14 @@ namespace ProjectPalaceOfZeus
             Form form = new MainHall();
             form.Show();
             this.Hide();
+        }
+
+        private void Restaurant_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (needToExitApp)
+            {
+                Application.Exit();
+            }
         }
     }
 }

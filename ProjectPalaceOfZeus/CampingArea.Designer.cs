@@ -525,6 +525,7 @@
             this.Name = "CampingArea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CampingArea";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CampingArea_FormClosing);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CampingArea_MouseClick);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CampingArea_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.LocationPictureBox)).EndInit();
