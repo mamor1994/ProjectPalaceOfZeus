@@ -176,6 +176,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.Location = new System.Drawing.Point(848, 474);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(61, 16);
@@ -187,6 +188,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel2.Location = new System.Drawing.Point(848, 630);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(61, 16);
@@ -198,6 +200,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel3.Location = new System.Drawing.Point(714, 474);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(91, 16);
@@ -208,6 +211,7 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel4.Location = new System.Drawing.Point(714, 630);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(91, 16);
@@ -218,6 +222,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.Location = new System.Drawing.Point(472, 681);
@@ -231,6 +236,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.Location = new System.Drawing.Point(293, 681);
@@ -244,6 +250,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.Location = new System.Drawing.Point(765, 681);
