@@ -180,8 +180,8 @@
             // ToHotelpictureBox
             // 
             this.ToHotelpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.goback;
-            this.ToHotelpictureBox.Location = new System.Drawing.Point(773, 237);
+            this.ToHotelpictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.help;
+            this.ToHotelpictureBox.Location = new System.Drawing.Point(773, 238);
             this.ToHotelpictureBox.Name = "ToHotelpictureBox";
             this.ToHotelpictureBox.Size = new System.Drawing.Size(100, 69);
             this.ToHotelpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,11 +194,11 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Font = new System.Drawing.Font("Segoe Script", 10.2F);
-            this.label6.Location = new System.Drawing.Point(605, 184);
+            this.label6.Location = new System.Drawing.Point(745, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(254, 27);
+            this.label6.Size = new System.Drawing.Size(128, 27);
             this.label6.TabIndex = 30;
-            this.label6.Text = "Επιστροφή σε Online-Help";
+            this.label6.Text = "Online-Help";
             // 
             // MainHall
             // 

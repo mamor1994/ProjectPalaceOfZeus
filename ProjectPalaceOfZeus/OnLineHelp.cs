@@ -78,5 +78,17 @@ namespace ProjectPalaceOfZeus
                 Application.Exit();
             }
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pictureBox4.Image = Properties.Resources.doureioshelp;
+            label4.Text = "Σε αυτή την φόρμα βρίσκεται ο Δούρειος Ίππος όπου ο χρήστης μπορεί πατώντας πάνω του με κλικ να μεταβεί στο εσωτερικό του.";
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            pictureBox3.Image = Properties.Resources.restauranthelp;
+            label3.Text = "Αυτή είναι η φόρμα του εστιατορίου. Μέσω αυτής ο χρήστης μπορεί κλικάροντας στο σερβιτόρο να ξεκινήσει την συνομιλία για την παραγγελία που θέλει να πραγματοποιήσει.";
+        }
     }
 }

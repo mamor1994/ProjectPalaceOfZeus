@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApollosSquareArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApollosSquareArea.Designer.cs">
+      <DependentUpon>ApollosSquareArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="CampingArea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,29 @@
     <Compile Include="CoffeeArea.Designer.cs">
       <DependentUpon>CoffeeArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="EntranceArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntranceArea.Designer.cs">
+      <DependentUpon>EntranceArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForestArea.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ForestArea.Designer.cs">
       <DependentUpon>ForestArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelensSpaArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelensSpaArea.Designer.cs">
+      <DependentUpon>HelensSpaArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlympusGardenArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlympusGardenArea.Designer.cs">
+      <DependentUpon>OlympusGardenArea.cs</DependentUpon>
     </Compile>
     <Compile Include="OnLineHelp.cs">
       <SubType>Form</SubType>
@@ -144,6 +168,9 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ApollosSquareArea.resx">
+      <DependentUpon>ApollosSquareArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CampingArea.resx">
       <DependentUpon>CampingArea.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,8 +180,17 @@
     <EmbeddedResource Include="CoffeeArea.resx">
       <DependentUpon>CoffeeArea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EntranceArea.resx">
+      <DependentUpon>EntranceArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForestArea.resx">
       <DependentUpon>ForestArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelensSpaArea.resx">
+      <DependentUpon>HelensSpaArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlympusGardenArea.resx">
+      <DependentUpon>OlympusGardenArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnLineHelp.resx">
       <DependentUpon>OnLineHelp.cs</DependentUpon>
@@ -576,6 +612,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\livadihelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trojangpsright.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gardenarea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaarea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apollossquare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeus.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

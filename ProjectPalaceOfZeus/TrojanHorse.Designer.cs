@@ -33,7 +33,9 @@
             this.DoorTimer = new System.Windows.Forms.Timer(this.components);
             this.StairsTimer = new System.Windows.Forms.Timer(this.components);
             this.TravelTimer = new System.Windows.Forms.Timer(this.components);
+            this.EngineStartTimer = new System.Windows.Forms.Timer(this.components);
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.RadioPictureBox = new System.Windows.Forms.PictureBox();
             this.ExitLabel = new System.Windows.Forms.Label();
             this.ReturnPictureBox = new System.Windows.Forms.PictureBox();
             this.DoorControlPanel = new System.Windows.Forms.Panel();
@@ -79,6 +81,7 @@
             this.marketAreaPictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RadioPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReturnPictureBox)).BeginInit();
             this.DoorControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StairsUpPictureBox)).BeginInit();
@@ -122,10 +125,16 @@
             this.TravelTimer.Interval = 6000;
             this.TravelTimer.Tick += new System.EventHandler(this.TravelTimer_Tick);
             // 
+            // EngineStartTimer
+            // 
+            this.EngineStartTimer.Interval = 3000;
+            this.EngineStartTimer.Tick += new System.EventHandler(this.EngineStartTimer_Tick);
+            // 
             // ControlPanel
             // 
             this.ControlPanel.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.cockpit;
             this.ControlPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ControlPanel.Controls.Add(this.RadioPictureBox);
             this.ControlPanel.Controls.Add(this.ExitLabel);
             this.ControlPanel.Controls.Add(this.ReturnPictureBox);
             this.ControlPanel.Controls.Add(this.DoorControlPanel);
@@ -142,6 +151,19 @@
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(900, 596);
             this.ControlPanel.TabIndex = 0;
+            // 
+            // RadioPictureBox
+            // 
+            this.RadioPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RadioPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.radio;
+            this.RadioPictureBox.Location = new System.Drawing.Point(391, 518);
+            this.RadioPictureBox.Name = "RadioPictureBox";
+            this.RadioPictureBox.Size = new System.Drawing.Size(197, 66);
+            this.RadioPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RadioPictureBox.TabIndex = 10;
+            this.RadioPictureBox.TabStop = false;
+            this.RadioPictureBox.Visible = false;
+            this.RadioPictureBox.Click += new System.EventHandler(this.RadioPictureBox_Click);
             // 
             // ExitLabel
             // 
@@ -325,6 +347,7 @@
             // OkPictureBox
             // 
             this.OkPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.OkPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OkPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.okbutton;
             this.OkPictureBox.Location = new System.Drawing.Point(653, 425);
             this.OkPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -334,10 +357,12 @@
             this.OkPictureBox.TabIndex = 6;
             this.OkPictureBox.TabStop = false;
             this.OkPictureBox.Visible = false;
+            this.OkPictureBox.Click += new System.EventHandler(this.OkPictureBox_Click);
             // 
             // UpPictureBox
             // 
             this.UpPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UpPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UpPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonup;
             this.UpPictureBox.Location = new System.Drawing.Point(653, 349);
             this.UpPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -347,10 +372,12 @@
             this.UpPictureBox.TabIndex = 5;
             this.UpPictureBox.TabStop = false;
             this.UpPictureBox.Visible = false;
+            this.UpPictureBox.Click += new System.EventHandler(this.UpPictureBox_Click);
             // 
             // LeftPictureBox
             // 
             this.LeftPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LeftPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LeftPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonleft;
             this.LeftPictureBox.Location = new System.Drawing.Point(593, 421);
             this.LeftPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -360,10 +387,12 @@
             this.LeftPictureBox.TabIndex = 4;
             this.LeftPictureBox.TabStop = false;
             this.LeftPictureBox.Visible = false;
+            this.LeftPictureBox.Click += new System.EventHandler(this.LeftPictureBox_Click);
             // 
             // RightPictureBox
             // 
             this.RightPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RightPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RightPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttonright;
             this.RightPictureBox.Location = new System.Drawing.Point(713, 422);
             this.RightPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -373,10 +402,12 @@
             this.RightPictureBox.TabIndex = 3;
             this.RightPictureBox.TabStop = false;
             this.RightPictureBox.Visible = false;
+            this.RightPictureBox.Click += new System.EventHandler(this.RightPictureBox_Click);
             // 
             // DownPictureBox
             // 
             this.DownPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DownPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DownPictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.dirbuttondown;
             this.DownPictureBox.Location = new System.Drawing.Point(653, 492);
             this.DownPictureBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -386,6 +417,7 @@
             this.DownPictureBox.TabIndex = 2;
             this.DownPictureBox.TabStop = false;
             this.DownPictureBox.Visible = false;
+            this.DownPictureBox.Click += new System.EventHandler(this.DownPictureBox_Click);
             // 
             // startEnginePictureBox
             // 
@@ -797,6 +829,7 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TrojanHorse_KeyDown);
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RadioPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReturnPictureBox)).EndInit();
             this.DoorControlPanel.ResumeLayout(false);
             this.DoorControlPanel.PerformLayout();
@@ -879,5 +912,7 @@
         private System.Windows.Forms.Timer TravelTimer;
         private System.Windows.Forms.PictureBox ReturnPictureBox;
         private System.Windows.Forms.Label ExitLabel;
+        private System.Windows.Forms.Timer EngineStartTimer;
+        private System.Windows.Forms.PictureBox RadioPictureBox;
     }
 }
