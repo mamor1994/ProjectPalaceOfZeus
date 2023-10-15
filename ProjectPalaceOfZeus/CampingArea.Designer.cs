@@ -94,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(746, 525);
+            this.label3.Location = new System.Drawing.Point(774, 525);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 23);
             this.label3.TabIndex = 11;
@@ -115,11 +115,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(736, 324);
+            this.label2.Location = new System.Drawing.Point(717, 324);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 23);
+            this.label2.Size = new System.Drawing.Size(219, 23);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Επιστροφή Ξενοδοχείο";
+            this.label2.Text = "Επιστροφή στο Ξενοδοχείο";
             // 
             // panel1
             // 

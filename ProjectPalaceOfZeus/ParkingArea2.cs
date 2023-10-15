@@ -23,7 +23,7 @@ namespace ProjectPalaceOfZeus
 
         private void ToHotelpictureBox_Click(object sender, EventArgs e)
         {
-            Room form = new Room();
+            MainHall form = new MainHall();
             form.Show();
             this.Hide();
         }

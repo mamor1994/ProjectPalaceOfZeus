@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,11 +14,11 @@ namespace ProjectPalaceOfZeus
     public partial class MainHall : Form
     {
         private bool needToExitApp = true;
-
+        
         public MainHall()
         {
             InitializeComponent();
-            label4.Text = GreetEmployee() +"Kαλωσήρθατε" + Environment.NewLine + "στο Παλάτι του Δία";
+            label4.Text = GreetEmployee() +"Kαλωσήρθατε" + Environment.NewLine + "στο Παλάτι του Δία!";
         }
 
         private string GreetEmployee()
@@ -25,13 +26,13 @@ namespace ProjectPalaceOfZeus
             DateTime currentTime = DateTime.Now;
             string greeting = "";
 
-            if (currentTime.Hour >= 6 && currentTime.Hour < 12)
+            if (currentTime.Hour >= 0 && currentTime.Hour < 12)
             {
-                greeting = "Καλημέρα!";
+                greeting = "Καλημέρα! ";
             }
             else if (currentTime.Hour >= 12 && currentTime.Hour < 24)
             {
-                greeting = "Καλησπέρα!";
+                greeting = "Καλησπέρα! ";
             }
             return greeting;
         }

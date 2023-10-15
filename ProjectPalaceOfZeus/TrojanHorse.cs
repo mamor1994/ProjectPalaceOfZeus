@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,9 @@ namespace ProjectPalaceOfZeus
         private Form Destination;
         private PictureBox currentHighlightedPictureBox = null;
         private Image previousImage = null;
+        private Keys lastPressedKey;
+        private bool rightbttnclick = false;
+        private bool radio_off = true;
 
         public TrojanHorse(int startingCol, int startingRow)
         {
@@ -88,6 +92,7 @@ namespace ProjectPalaceOfZeus
                     break;
             }
             e.Handled = true;
+            lastPressedKey = e.KeyCode;
 
             //if (prevRow != currentRow || prevCol != currentCol)
             //{
@@ -107,8 +112,14 @@ namespace ProjectPalaceOfZeus
             if (currentControl is PictureBox pictureBox)
             {
                 previousImage = pictureBox.Image;
-                pictureBox.Image = Properties.Resources.trojangps;
-                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                if (lastPressedKey == Keys.Right || rightbttnclick)
+                {
+                    pictureBox.Image = Properties.Resources.trojangpsright;
+                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                else 
+                    pictureBox.Image = Properties.Resources.trojangps; 
+                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 currentHighlightedPictureBox = pictureBox;
             }
         }
@@ -125,7 +136,7 @@ namespace ProjectPalaceOfZeus
             }
             else if (col == 2 && row == 0)
             {
-               // Destination = new OlympusGarden();
+                Destination = new OlympusGardenArea();
             }
             else if (col == 3 && row == 0)
             {
@@ -133,11 +144,11 @@ namespace ProjectPalaceOfZeus
             }
             else if (col == 0 && row == 2)
             {
-                Destination = new Pool();
+                Destination = new HelensSpaArea();
             }
             else if (col == 1 && row == 2)
             {
-               // Destination = new ApollosSquareArea();
+                Destination = new ApollosSquareArea();
             }
             else if (col == 2 && row == 2)
             {
@@ -153,7 +164,7 @@ namespace ProjectPalaceOfZeus
             }
             else if (col == 1 && row == 4)
             {
-               // Destination = new EntranceArea();
+                Destination = new EntranceArea();
             }
             else if (col == 2 && row == 4)
             {
@@ -169,15 +180,9 @@ namespace ProjectPalaceOfZeus
         {
             if (openDoors == false && loweredStairs == false)
             {
-                this.KeyPreview = true;
-                HotelMap.Visible = true;
-                UpPictureBox.Visible = true;
-                DownPictureBox.Visible = true;
-                LeftPictureBox.Visible = true;
-                RightPictureBox.Visible = true;
-                OkPictureBox.Visible = true;
-                startEnginePictureBox.Visible = false;
-                startEnginePictureBox.Enabled = false;
+                EngineStartTimer.Start();
+                SoundPlayer player = new SoundPlayer("../../../sounds/startingengine.wav");
+                player.Play();
             }
             else if (openDoors == true && loweredStairs == true)
             {
@@ -199,6 +204,8 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("Οι πόρτες ανοίγουν..", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DoorTimer.Start();
+                SoundPlayer player = new SoundPlayer("../../../sounds/door.wav");
+                player.Play();
             }
             else
             {
@@ -212,6 +219,8 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("Η σκάλα κατεβαίνει..", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 StairsTimer.Start();
+                SoundPlayer player = new SoundPlayer("../../../sounds/stairs.wav");
+                player.Play();
             }
             else
             {
@@ -225,6 +234,8 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("Οι πόρτες κλείνουν..", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DoorTimer.Start();
+                SoundPlayer player = new SoundPlayer("../../../sounds/door.wav");
+                player.Play();
             }
             else
             {
@@ -238,6 +249,8 @@ namespace ProjectPalaceOfZeus
             {
                 MessageBox.Show("Η σκάλα ανεβαίνει..", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 StairsTimer.Start();
+                SoundPlayer player = new SoundPlayer("../../../sounds/stairs.wav");
+                player.Play();
             }
             else
             {
@@ -333,6 +346,104 @@ namespace ProjectPalaceOfZeus
             else if (openDoors != true && loweredStairs == true)
             {
                 MessageBox.Show("Η πόρτα είναι κλειστή, ανοίξτε τη για να βγείτε έξω.", "Προσοχή!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void UpPictureBox_Click(object sender, EventArgs e)
+        {
+            if (currentRow > 0)
+                currentRow -= 2;
+            UpPictureBox.BackColor = Color.Green;
+            DownPictureBox.BackColor = Color.Black;
+            LeftPictureBox.BackColor = Color.Black;
+            RightPictureBox.BackColor = Color.Black;
+            OkPictureBox.BackColor = Color.Black;
+            rightbttnclick = false;
+            HighlightCurrentCell();
+        }
+
+        private void DownPictureBox_Click(object sender, EventArgs e)
+        {
+            if (currentRow < 4)
+                currentRow += 2;
+            UpPictureBox.BackColor = Color.Black;
+            DownPictureBox.BackColor = Color.Green;
+            LeftPictureBox.BackColor = Color.Black;
+            RightPictureBox.BackColor = Color.Black;
+            OkPictureBox.BackColor = Color.Black;
+            rightbttnclick = false;
+            HighlightCurrentCell();
+        }
+
+        private void LeftPictureBox_Click(object sender, EventArgs e)
+        {
+            if (currentCol > 0)
+                currentCol--;
+            UpPictureBox.BackColor = Color.Black;
+            DownPictureBox.BackColor = Color.Black;
+            LeftPictureBox.BackColor = Color.Green;
+            RightPictureBox.BackColor = Color.Black;
+            OkPictureBox.BackColor = Color.Black;
+            rightbttnclick = false;
+            HighlightCurrentCell();
+        }
+
+        private void RightPictureBox_Click(object sender, EventArgs e)
+        {
+            if (currentCol < 3)
+                currentCol++;
+            UpPictureBox.BackColor = Color.Black;
+            DownPictureBox.BackColor = Color.Black;
+            LeftPictureBox.BackColor = Color.Black;
+            RightPictureBox.BackColor = Color.Green;
+            OkPictureBox.BackColor = Color.Black;
+            rightbttnclick = true;
+            HighlightCurrentCell();
+        }
+
+        private void OkPictureBox_Click(object sender, EventArgs e)
+        {
+            UpPictureBox.BackColor = Color.Black;
+            DownPictureBox.BackColor = Color.Black;
+            LeftPictureBox.BackColor = Color.Black;
+            RightPictureBox.BackColor = Color.Black;
+            OkPictureBox.BackColor = Color.Green;
+            DialogResult result = MessageBox.Show("Θέλετε να μετακινηθείτε σε αυτήν την τοποθεσία;", "Επιβεβαίωση", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Έναρξη αυτόματης πλοήγησης", "Ενημέρωση", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TravelTimer.Start();
+            }
+        }
+
+        private void EngineStartTimer_Tick(object sender, EventArgs e)
+        {
+            EngineStartTimer.Stop();            
+            this.KeyPreview = true;
+            HotelMap.Visible = true;
+            UpPictureBox.Visible = true;
+            DownPictureBox.Visible = true;
+            LeftPictureBox.Visible = true;
+            RightPictureBox.Visible = true;
+            OkPictureBox.Visible = true;
+            RadioPictureBox.Visible = true;
+            startEnginePictureBox.Visible = false;
+            startEnginePictureBox.Enabled = false;
+        }
+
+        private void RadioPictureBox_Click(object sender, EventArgs e)
+        {
+            if (radio_off)
+            {
+                radio_off = false;
+                SoundPlayer letsrock = new SoundPlayer("../../../sounds/radiosong.wav");
+                letsrock.Play();
+            }
+            else
+            {
+                SoundPlayer letsrock = new SoundPlayer("../../../sounds/radiosong.wav");
+                letsrock.Stop();
+                radio_off = true;
             }
         }
     }

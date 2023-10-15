@@ -98,7 +98,7 @@
             // 
             this.ToTRHorsePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ToTRHorsePictureBox.Image = global::ProjectPalaceOfZeus.Properties.Resources.Return;
-            this.ToTRHorsePictureBox.Location = new System.Drawing.Point(750, 89);
+            this.ToTRHorsePictureBox.Location = new System.Drawing.Point(759, 96);
             this.ToTRHorsePictureBox.Name = "ToTRHorsePictureBox";
             this.ToTRHorsePictureBox.Size = new System.Drawing.Size(100, 69);
             this.ToTRHorsePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,14 +120,14 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(718, 245);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 23);
+            this.label2.Size = new System.Drawing.Size(219, 23);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Επιστροφή Ξενοδοχείο";
+            this.label2.Text = "Επιστροφή στο Ξενοδοχείο";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(666, 33);
+            this.label1.Location = new System.Drawing.Point(699, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 23);
             this.label1.TabIndex = 5;

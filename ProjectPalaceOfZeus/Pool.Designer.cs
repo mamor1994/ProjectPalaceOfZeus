@@ -61,45 +61,49 @@
             this.trackBarTemperature.Tag = "";
             this.trackBarTemperature.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.trackBarTemperature.Value = 10;
+            this.trackBarTemperature.Visible = false;
             this.trackBarTemperature.Scroll += new System.EventHandler(this.trackBarTemperature_Scroll);
             // 
             // btnTogglePool
             // 
             this.btnTogglePool.BackColor = System.Drawing.Color.PowderBlue;
             this.btnTogglePool.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTogglePool.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTogglePool.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTogglePool.Location = new System.Drawing.Point(773, 103);
             this.btnTogglePool.Name = "btnTogglePool";
             this.btnTogglePool.Size = new System.Drawing.Size(148, 36);
             this.btnTogglePool.TabIndex = 4;
             this.btnTogglePool.Text = "Water Supply: On/Off";
             this.btnTogglePool.UseVisualStyleBackColor = false;
+            this.btnTogglePool.Visible = false;
             this.btnTogglePool.Click += new System.EventHandler(this.btnToggleWaterSupply_Click);
             // 
             // btnToggleAlarm
             // 
             this.btnToggleAlarm.BackColor = System.Drawing.Color.Red;
             this.btnToggleAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnToggleAlarm.Font = new System.Drawing.Font("Microsoft Uighur", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggleAlarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToggleAlarm.Location = new System.Drawing.Point(554, 103);
             this.btnToggleAlarm.Name = "btnToggleAlarm";
             this.btnToggleAlarm.Size = new System.Drawing.Size(124, 36);
             this.btnToggleAlarm.TabIndex = 5;
             this.btnToggleAlarm.Text = "Alarm: On/Off";
             this.btnToggleAlarm.UseVisualStyleBackColor = false;
+            this.btnToggleAlarm.Visible = false;
             this.btnToggleAlarm.Click += new System.EventHandler(this.btnToggleAlarm_Click);
             // 
             // lblTemperature
             // 
             this.lblTemperature.AutoSize = true;
             this.lblTemperature.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.lblTemperature.Font = new System.Drawing.Font("Microsoft Uighur", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTemperature.Location = new System.Drawing.Point(607, 292);
             this.lblTemperature.Name = "lblTemperature";
-            this.lblTemperature.Size = new System.Drawing.Size(71, 24);
+            this.lblTemperature.Size = new System.Drawing.Size(104, 20);
             this.lblTemperature.TabIndex = 8;
             this.lblTemperature.Text = "Temperature";
             this.lblTemperature.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTemperature.Visible = false;
             // 
             // pictureBox2
             // 
@@ -111,6 +115,7 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "";
+            this.pictureBox2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -123,6 +128,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "";
+            this.pictureBox1.Visible = false;
             // 
             // lblMessage
             // 
@@ -159,9 +165,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.Location = new System.Drawing.Point(892, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 23);
+            this.label2.Size = new System.Drawing.Size(239, 23);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Επιστροφή στην Πισίνα";
+            this.label2.Text = "Επιστροφή σε Έλεγχο Πισίνας";
             // 
             // ToHotelpictureBox
             // 
@@ -201,6 +207,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ProjectPalaceOfZeus.Properties.Resources.withWater;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1097, 586);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ToTRHorsePictureBox);

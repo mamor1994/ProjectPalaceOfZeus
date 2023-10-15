@@ -130,11 +130,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(735, 300);
+            this.label2.Location = new System.Drawing.Point(707, 296);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 23);
+            this.label2.Size = new System.Drawing.Size(219, 23);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Επιστροφή Ξενοδοχείο";
+            this.label2.Text = "Επιστροφή στο Ξενοδοχείο";
             // 
             // label1
             // 
@@ -152,7 +152,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 511);
+            this.panel1.Size = new System.Drawing.Size(782, 511);
             this.panel1.TabIndex = 18;
             this.panel1.Visible = false;
             // 
@@ -541,9 +541,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LocationPictureBox);
             this.Controls.Add(this.ToHotelpictureBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ToTRHorsePictureBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

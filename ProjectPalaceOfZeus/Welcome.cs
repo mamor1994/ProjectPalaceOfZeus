@@ -21,10 +21,10 @@ namespace ProjectPalaceOfZeus
         public Welcome()
         {
             InitializeComponent();
-            timer1.Interval = 4000;
+            timer1.Interval = 7000;
             timer1.Start();
             synthesizer = new SpeechSynthesizer();
-            string textToSpeak = "Hello";
+            string textToSpeak = " , Greetings dear Guest. Enjoy your stay to our hotel";
             synthesizer.SpeakAsync(textToSpeak);
         }
 
@@ -33,7 +33,7 @@ namespace ProjectPalaceOfZeus
             timer1.Stop();
             synthesizer.Dispose();
             this.Hide();
-            OnLineHelp form = new OnLineHelp();
+            MainHall form = new MainHall();
             form.Show();
         }
 

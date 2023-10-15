@@ -36,13 +36,13 @@ namespace ProjectPalaceOfZeus
             DateTime currentTime = DateTime.Now;
             string greeting = "";
 
-            if (currentTime.Hour >= 6 && currentTime.Hour < 12)
+            if (currentTime.Hour >= 0 && currentTime.Hour < 12)
             {
-                greeting = "Καλημέρα!";
+                greeting = "Καλημέρα! ";
             }
-            else if (currentTime.Hour >= 12 && currentTime.Hour < 18)
+            else if (currentTime.Hour >= 12 && currentTime.Hour < 23.59)
             {
-                greeting = "Καλησπέρα!";
+                greeting = "Καλησπέρα! ";
             }
             return greeting;
         }
@@ -74,7 +74,7 @@ namespace ProjectPalaceOfZeus
             }
             else
             {
-                label1.Text = "Παρακαλώ σκανάρετε το μενού";
+                label1.Text = "Παρακαλώ σκανάρετε το" + Environment.NewLine + "barcode για να δείτε τον κατάλογο";
                 button1.Visible = false;
                 button2.Visible = false;
                 pictureBox2.Visible = false;
