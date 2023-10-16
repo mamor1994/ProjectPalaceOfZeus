@@ -74,7 +74,7 @@ namespace ProjectPalaceOfZeus
             }
             else
             {
-                label1.Text = "Παρακαλώ σκανάρετε το" + Environment.NewLine + "barcode για να δείτε τον κατάλογο";
+                label1.Text = "Παρακαλώ σκανάρετε το" + Environment.NewLine + "barcode για να δείτε" + Environment.NewLine + "τον κατάλογο";
                 button1.Visible = false;
                 button2.Visible = false;
                 pictureBox2.Visible = false;
